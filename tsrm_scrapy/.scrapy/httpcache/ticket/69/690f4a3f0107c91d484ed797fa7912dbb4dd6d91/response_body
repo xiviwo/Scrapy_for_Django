@@ -1,0 +1,1075 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+	<head>
+		
+		<title>Start Center</title>
+		<link rel="stylesheet" type="text/css" href="../webclient/javascript/dojo-20140118-2234/dojo/resources/dojo.css"/>
+		<link rel="stylesheet" type="text/css" href="../webclient/javascript/dojo-20140118-2234/dojox/html/resources/ellipsis.css"/>
+		<link rel="stylesheet" type="text/css" href="../webclient/javascript/dojo-20140118-2234/dijit/themes/tundra/tundra.css"/>
+		<link id="csslink" rel="stylesheet" type="text/css" href="https://w3-01.ibm.com/itd/igaism/webclient/skins-20140301-2351/tivoli09/css/maximo.css"/>
+
+		<link id="csslink_ex" rel="stylesheet" type="text/css" href="https://w3-01.ibm.com/itd/igaism/webclient/skins-20140301-2351/tivoli09/css/maximo_ex.css"/>
+		<link rel="shortcut icon" href="../webclient/skins-20140301-2351/tivoli09/images/maximo-icon.ico"/>
+		<link rel="apple-touch-icon" href="../webclient/skins-20140301-2351/tivoli09/images/maximo-icon.png"/> 
+		<meta http-equiv="imagetoolbar" content="no"/>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+		<meta http-equiv="Content-Script-Type" content="text/javascript"/>
+		<meta name="viewport" content="width=480, initial-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no"/>
+
+		<script>
+			/* preload images for speed */
+			new function() 
+			{
+				var imagePath = "../webclient/skins-20140301-2351/tivoli09/images/";
+				var preloadImages = [
+						/* Tabs */
+						"tabs/row.gif", "tabs/sub_row.gif", "tabs/off.gif", "designer/formtabon_selected.gif", "tabs/over.gif",
+						/* Toolbar */
+						"tb_button_highlight.gif",
+						/* Menu */
+						"menus/menusub.gif",
+						/* Async */
+						"async/working.gif", "async/edited.png", "async/error.png", "async/warning.png", "async/question.png", "async/smartfill.png"];
+				
+				for(var i=0;i<preloadImages.length;i++)
+				{
+					var image = new Image();
+					image.src = imagePath + preloadImages[i];
+				}
+			}();
+		</script>
+
+		<script type="text/javascript" src="https://w3-01.ibm.com/itd/igaism/webclient/javascript/tpae-20140301-2351/deprecated.js"></script>
+		<script type="text/javascript" src="https://w3-01.ibm.com/itd/igaism/webclient/javascript/tpae-20140301-2351/constants.js"></script>
+		<script type="text/javascript" src="https://w3-01.ibm.com/itd/igaism/webclient/javascript/tpae-20140301-2351/prototype.js"></script>
+		<script type="text/javascript" src="https://w3-01.ibm.com/itd/igaism/webclient/javascript/tpae-20140301-2351/browser_library.js"></script>
+		<script type="text/javascript" src="https://w3-01.ibm.com/itd/igaism/webclient/javascript/tpae-20140301-2351/menus.js"></script>
+		<script type="text/javascript" src="https://w3-01.ibm.com/itd/igaism/webclient/javascript/tpae-20140301-2351/navsection.js"></script>
+
+		<script type="text/javascript" src="https://w3-01.ibm.com/itd/igaism/webclient/javascript/tpae-20140301-2351/navsection_ex.js"></script>
+		<script type="text/javascript" src="https://w3-01.ibm.com/itd/igaism/webclient/javascript/tpae-20140301-2351/library.js"></script>
+		<script type="text/javascript" src="https://w3-01.ibm.com/itd/igaism/webclient/javascript/tpae-20140301-2351/library_ex.js"></script>
+		<script type="text/javascript" src="https://w3-01.ibm.com/itd/igaism/webclient/skins-20140301-2351/tivoli09/css/../js/skinlibrary.js"></script>
+		<script type="text/javascript" src="https://w3-01.ibm.com/itd/igaism/webclient/javascript/tpae-20140301-2351/async.js"></script>
+		<script type="text/javascript" src="https://w3-01.ibm.com/itd/igaism/webclient/javascript/tpae-20140301-2351/designer.js"></script>
+		<script type="text/javascript" src="https://w3-01.ibm.com/itd/igaism/webclient/javascript/tpae-20140301-2351/wfdesign.js"></script>
+		<script type="text/javascript" src="https://w3-01.ibm.com/itd/igaism/webclient/javascript/tpae-20140301-2351/sessiontimer.js"></script>
+
+		<script type="text/javascript" src="https://w3-01.ibm.com/itd/igaism/webclient/javascript/tpae-20140301-2351/dataproxy.js"></script>
+		<script type="text/javascript">
+			var clientAreaId = "";
+			document.title="Start Center";
+			isBidiEnabled = false;
+			var APP_KEY_LABEL = "Group Name";
+			var IMAGE_PATH="../webclient/skins-20140301-2351/tivoli09/images/";
+			var MAINDOC=document;
+			// No more hidden document, so set it to current document for backwards compatibility.
+			var HIDDENDOC=document;
+			var IFRAMEPAGE = "https://w3-01.ibm.com/itd/igaism/ui/maximo.jsp?uisessionid=4235&csrftoken=hvs0vl0eno51gvmassb0g2ebbi";
+			var XHRACTION = "https://w3-01.ibm.com/itd/igaism/ui/maximo.jsp";
+			var PORTLETACTION = "https://w3-01.ibm.com/itd/igaism/webclient/components/portletrenderer.jsp?uisessionid=4235&csrftoken=hvs0vl0eno51gvmassb0g2ebbi";
+            var USEFILEPROMPT = "1";
+            var VERTLABELS = "false";
+			var DESIGNMODE=false;
+			var APPTARGET="startcntr";
+			var DEBUGLEVEL = 0;
+			var SCREENREADER = false;
+			var WEBREPLAY = false;
+			var FOCUSDELAY = 300;
+			var UNLOAD_WARN = "If you navigate away from this page you may lose unsaved data and it may be necessary to log in again.";
+			var SKIN = "skins-20140301-2351/tivoli09/";
+			var USERLOCALE="zh";
+			var MSG_BTNCLOSE = 1;
+			var MSG_BTNOK = 2;
+			var MSG_BTNCANCEL = 4;
+			var MSG_BTNYES = 8;
+			var MSG_BTNNO = 16;
+			var MSGBOX_TITLE = "System Message";
+			var EXCEPTION_NONE          = -1;
+			var EXCEPTION_WARNING       = 0;
+			var EXCEPTION_ERROR         = 3;
+			var EXCEPTION_YESNOCANCEL   = 2;
+			var EXCEPTION_REQUIREDFIELD = 1;
+			var EXCEPTION_INFO          = 5;
+			var REQUESTTYPE_ASYNC     = "ASYNC";
+			var REQUESTTYPE_HIGHASYNC = "HIGHASYNC";
+			var REQUESTTYPE_SYNC      = "SYNC";
+			var REQUESTTYPE_NORENDER  = "NORENDER";
+			var REQUESTTYPE_NONE      = "none";
+			var REQUESTTYPE_DEFAULT   = "default";
+			var REQUESTTYPE = "requesttype";
+			var JAVASCRIPT_BASE = "https://w3-01.ibm.com/itd/igaism/webclient/javascript/dojo-20140118-2234/";
+			var DEBUG_DOJO = false;
+			var SERVER_UPDATE_WARN="The system wants to insert {0} in this field. You can either insert the system value or continue entering your value and ignore this message.";
+			var SERVER_UPDATE_BUTTON="Insert {0}";
+			var SERVER_CLEAR_WARN="The system wants to clear this field. You can either allow the system clear the field or continue entering your value and ignore this message.";
+			var SERVER_CLEAR_BUTTON="Clear Field";
+			var CONTAINER_ERROR_ICONS = {"question":{"tooltip":"Contains errors","event":"errorfocus"},"error":{"tooltip":"Contains errors","event":"errorfocus"},"smartfill":{"tooltip":"Contains errors","event":"errorfocus"},"warning":{"tooltip":"Contains warnings","event":"errorfocus"}};
+			var menus;
+			var topLevelMenus = new Array();
+			var tpaeConfig = {
+				fp7504 : true,
+				extendedTooltipShowDelay: 1000,
+				extendedTooltipHideDelay: 500,
+				tabBreadCrumbs: false,
+				clientDataValidation: false,
+				validationOn: true,
+				menuHideDelay : 750,
+				clientEventQueue: {
+					timeout: 3000,
+					threshold: 1
+				}
+			};
+			queueManager = new QueueManager({sessionid:decodeURIComponent("4235"), designmode:false, threshold:tpaeConfig.clientEventQueue.threshold, timeout:tpaeConfig.clientEventQueue.timeout, csrftoken:'hvs0vl0eno51gvmassb0g2ebbi'});
+			/* 
+			*	Do images last so that special bindings done in inputs do not overwrite related field events for hover images
+			* 	May wish to change all bindings in bindEvents to use dojo.connect in the future
+			*/
+			var eventBindObjects = new Array("a","div","input","button","select","span","textarea","fieldset","img");
+			var LEAVE_TIMEOUT = 0;
+
+			var PRODUCTNAME = "Maximo - Start Center";
+			SESSION_TIMEOUT = 1800;//in seconds
+			timeUntilLogout=SESSION_TIMEOUT;//in seconds
+			SESSION_WARNTIMEOUT = 120;//in seconds.
+			SESSIONRESETTHRESHHOLD = SESSION_TIMEOUT/3;//in seconds.
+			var WARNTEXTMINS = "Your session will time out in {0} minutes.";
+			var WARNTEXTSECS = "Your session will time out in {0} seconds.";
+			var WARNLOSTCONNECTION =  "The connection to the server is lost.  When the connection is re-established, an attempt will be made to resend any failed events.";
+			var WARNCONNECTIONRESTORED =  "The connection to the server is restored and all events were successfully sent to the server.";
+			var CONNECTIONRESTOREDBTNTEXT =  "OK";
+			var WARNLOSTURL  = "https://w3-01.ibm.com/itd/igaism/ui/1394683535400?checkhiddenandconnection=true&uisessionid=4235&csrftoken=hvs0vl0eno51gvmassb0g2ebbi";
+			var SHOWLOSTCONNECTIONWARNINGONLY = false;
+			var CONNECTIONREDRAWURL  = "https://w3-01.ibm.com/itd/igaism/ui/maximo.jsp?event=render&targetid=startcntr&value=rerender&conectionwarningclosed=true&uisessionid=4235&csrftoken=hvs0vl0eno51gvmassb0g2ebbi";
+			CONNECTIONWARNINGINTERVAL = 15000;//in milliseconds.
+			CONNECTIONRECHECKINTERVAL = 2000;//in milliseconds.
+			var ASYNCTOOLTIPWAITEBEFOREOPEN = 2000;//in milliseconds.
+			var ASYNCTOOLTIPUSERVALUE =  "You entered:";
+			var MAXRCURL = "https://w3-01.ibm.com/itd/igaism";
+			var TIMEOUTRESETURL = "https://w3-01.ibm.com/itd/igaism/servlet/sessionservlet?resetsession=true";
+			var LOGOUTURL = "https://w3-01.ibm.com/itd/igaism/webclient/login/logout.jsp?uisessionid=4235&csrftoken=hvs0vl0eno51gvmassb0g2ebbi";
+			var PAGESEQNUM = "1";
+			var UISESSIONID = decodeURIComponent("4235");
+			var CSRFTOKEN = "hvs0vl0eno51gvmassb0g2ebbi";
+			var loadMethods = new Array;
+			function addLoadMethod(method)
+			{
+				loadMethods.push(method);
+			}
+			var USERNAME="215579-672";
+			var USERLANG="EN";
+			var MOBILE=false;
+			var MOBILEAGENT = false; 
+			var MOBILEDATEPICKER=false;
+			var OUTOFSEQERRORMSG="There was a communication problem with the server which will result in the loss of some of your changes. You must reload the application and enter the information again.";
+			var OUTOFSEQERRORRELOADBUTTON="Reload";
+			var CONNECTIONERRORMSG="The browser cannot connect to the server. Reload the application and try again. If reloading does not solve the problem, the reason might be that you are disconnected from the network or the server might be down.<br/><br/>Error code: {0}";
+			var UNKNOWSERVERERRORMSG="The server has encountered an unknown error. Reload the application and try again. If the problem persists, contact your system administrator.<br/><br/>Error code: {0}";
+			var clientDate = new Date().getTime();
+			var clientTimer = true
+			var warnExit = true
+			addLoadMethod("hideURLbar();");
+			addLoadMethod("stopDocScroll();");
+		</script>
+		<script type="text/javascript">
+			var djConfig =
+			{
+				isDebug: false,
+				modulePaths: {
+							'com.ibm.mm':'/enabler/js/com/ibm/mm',
+							'com.ibm.mashups':'/enabler/js/com/ibm/mm',
+							'com.ibm.widgets':'/enabler/js/com/ibm/widgets'},
+				parseOnLoad: false,
+				locale: 'en',
+				extraLocale: ['zh']
+			};
+			var DOJOLOCALE="en";
+		</script>
+
+		<script type="text/javascript" src="../webclient/javascript/dojo-20140118-2234/dojo/dojo.js"></script>
+		<script type="text/javascript" src="../webclient/javascript/dojo-20140118-2234/dojo/window.js"></script>
+		<script type="text/javascript" src="../webclient/javascript/tpae-20140301-2351/dojo_library.js"></script>
+		<script>
+			var MAXRECENTAPPS = 8;
+			var RECENTAPPTEXT = "My Recent Applications";
+			
+			var hebrew=false;
+			var islamic=false;
+			dojo.require('layers.mbs.popuplayer');
+			dojo.addOnLoad(function() {
+				if(dojo.isFF >= 4 || dojo.isFF==0){ //problem with 3.6 and dojox.html.ellipsis
+					dojo.require("dojox.html.ellipsis");
+				}
+				dojo.require("ibm.tivoli.mbs.html");
+				dojo.require("dojo.number");
+				dojo.require('dijit._base.popup'); 
+				dojo.require('dijit.Tooltip');
+				dojo.require('dojo.dnd.Moveable');
+				dojo.require("dojo.dnd.move");
+				dojo.require("dojo.fx");
+				// Workaround to set the starting z index for dojo popups and tooltips above the maximo dialog.
+				dojo.addOnLoad(dojohelper.fixPopupZIndex);
+			});
+		</script>
+			<style>html { display:none }</style>
+			<script>
+				if (self == top) {
+					document.documentElement.style.display = 'block';
+				} else {
+					top.location = self.location;
+				}
+			</script>
+	</head>
+	<body role="application" scroll='no' class="tundra scBody"  style="overflow:hidden;cursor:wait;padding:0px;margin:0px;height:100%;width:100%"
+		onkeydown="resetLogoutTimer(false);if(working){cancelEvent(event);};if(event.keyCode==78 && event.ctrlKey && !event.altKey){window.open();return false;};if(hasKeyCode(event, 'KEYCODE_BACKSPACE') && (getSourceElement(event).type == 'undefined' || !(getSourceElement(event).type.indexOf('text') >= 0 || getSourceElement(event).type == 'password'))) cancelEvent(event); if (appHotkey(event) == false) { if(menus){menus._hideMenu();} if(event.ctrlKey && event.altKey){if(event.keyCode==70){ qsTB=getQSTB(); if(qsTB){ qsTB.focus();} }}}"
+		onclick="if(getSourceElement(event).id!='wait'){hideAllMenus(false);}" >
+		
+		<table id="menuholder" style="position:absolute;z-index:50000;top:0px;left:0px;display:inline;" role="presentation"><tr><td id="menuholdertd" width="100%"></td></tr></table>
+		<!-- used to remove select of text when item cannot take select DO NOT REMOVE --><label for="tempselect" aria-hidden="true" style="display:none">TEMPSELECT</label><input type="text" id="tempselect" aria-hidden="true" style="position:absolute;top:-1000"/>
+		<table id="mx14" class="  " summary="" width="100%" height="100%" style="vertical-align:top;" role="presentation">
+
+				<tr   control="true" id="mx13_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx12_0"     valign="top" style="vertical-align:top;"><table role="presentation" id="mx11" cellspacing='0' width="100%"  valign="top" class="  " summary="" style="">				<tr   control="true" id="mx10_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx9_0"     valign="top" style="vertical-align:top;"><table role="presentation" id="mx8" cellspacing='0' width="100%"  valign="top" class="  " summary="" style="">				<tr   control="true" id="mx7_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx6_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx5"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">					<tr class="aha">
+						<td>
+							<div id="mx23_0_div" style="width:100%;height:100%;overflow-x:auto">
+								<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+
+				<tr   control="true" id="mx23_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx22_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx21"   width="100%" height="100%" class="  " summary=""  style="width:100%;height:100%;;;vertical-align:top">				<tr   control="true" id="mx29_0"    style="vertical-align:top;">
+
+	<td width="100%" align="left" class="titlebarback">
+		<table width="100%" border="0" style="height: 40px" class="bgnb   " role="banner">
+			<tr>
+				<td style="vertical-align:top;white-space: nowrap;">
+					<table cellspacing="0" cellpadding="0" role="presentation" style="height: 100%;">
+						<tr>
+							
+							<td width="35" class="applogo">
+								<a id="appImageAnchor" href="javascript: sendEvent('focusfirst')"><img id="appimage" border="0" src="../webclient/skins-20140301-2351/tivoli09/images/appimg_startcntr.gif" align="left" hspace="0" alt="Start Center" /></a>
+							</td>
+							
+							<td style="white-space: nowrap">
+							
+							</td>
+							<td style="vertical-align:top;white-space: nowrap;">
+								<span id="txtappname" class="txtappname">&nbsp;
+									Welcome, XIONG CHANG WU
+								</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+		
+				<td style="vertical-align:bottom;text-align:left">
+					<table id="titlebar_error_table" class="umtable" border="0" cellspacing="0" cellpadding="0" style="text-align:left" role="presentation">
+						<tr>
+							<td><img id="titlebar_error_image" src="../webclient/skins-20140301-2351/tivoli09/images/information.gif"  style="visibility:hidden" alt=""/></td>
+							<td id="titlebar_error" role="alert" class="text um" style="white-space: nowrap">&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+		
+			
+				<td class="titlebarlinks" align="right" style="text-align:right">
+					<table role="navigation" align="right" style="height: 100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td>
+								<span class="homeButtontxtappname userfullname" style="display:none">XIONG CHANG WU</span>
+							</td>
+						<td    nowrap="nowrap"  id="mx44_0"     valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx41_holder" class="bc"><span ctype="label"  id="mx41"   tabindex="0"     targetid="mx41"  mxevent="click" accesskey='B' class="text powerwhite   anchor" style="display:block;;cursor:pointer;;;;" title="Bulletins: (0)  ALT+B"><img id='mx41_image' src='../webclient/skins-20140301-2351/tivoli09/images/btn_bboard.gif'  border='0' alt="Bulletins: &#040;0&#041;  ALT+B" style='vertical-align:top;margin:0px;margin-left:3px;margin-right:3px;'/><span><span></span><span class='text hl hlak'>B</span><span>ulletins: (0) </span></span></span></div></td>
+
+
+
+
+
+
+	
+
+	
+
+	<script type="text/javascript">
+	
+		dojo.require("com.ibm.ism.pmtco.livechat");
+		
+	
+		
+		com.ibm.ism.pmtco.livechat.popupBlockedMsg = 'CTGRD5235E - Chat window was blocked, disable your browser popup blocker.';
+		com.ibm.ism.pmtco.livechat.okLabel = 'OK';
+				
+	
+
+	</script>
+
+	
+
+				<td    nowrap="nowrap"  id="mx49_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx48_holder" class="bc"><span ctype="label"  id="mx48"   tabindex="0"    ev="goto" targetid="mx48"  mxevent="click" accesskey='G' class="text powerwhite   anchor" style="display:block;;cursor:pointer;;;;" title="Go To ALT+G"><img id='mx48_image' src='../webclient/skins-20140301-2351/tivoli09/images/btn_goto.gif'  border='0' alt="Go To ALT+G" style='vertical-align:top;margin:0px;margin-left:3px;margin-right:3px;'/><span><span></span><span class='text hl hlak'>G</span><span>o To</span></span></span></div></td>
+				<td    nowrap="nowrap"  id="mx52_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx51_holder" class="bc"><span ctype="label"  id="mx51"   tabindex="0"     targetid="mx51"  mxevent="click" accesskey='C' class="text powerwhite   anchor" style="display:block;;cursor:pointer;;;;" title="Start Center ALT+C"><img id='mx51_image' src='../webclient/skins-20140301-2351/tivoli09/images/btn_startcenter.gif'  border='0' alt="Start Center ALT+C" style='vertical-align:top;margin:0px;margin-left:3px;margin-right:3px;'/><span><span>Start </span><span class='text hl hlak'>C</span><span>enter</span></span></span></div></td>
+				<td    nowrap="nowrap"  id="mx55_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx54_holder" class="bc"><span ctype="label"  id="mx54"   tabindex="0"    ev="profile" targetid="mx54"  mxevent="click" accesskey='P' class="text powerwhite   anchor" style="display:block;;cursor:pointer;;;;" title="Profile ALT+P"><img id='mx54_image' src='../webclient/skins-20140301-2351/tivoli09/images/btn_profile.gif'  border='0' alt="Profile ALT+P" style='vertical-align:top;margin:0px;margin-left:3px;margin-right:3px;'/><span><span></span><span class='text hl hlak'>P</span><span>rofile</span></span></span></div></td>
+				<td    nowrap="nowrap"  id="mx58_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx57_holder" class="bc"><span ctype="label"  id="mx57"   tabindex="0"     targetid="mx57"  mxevent="click" accesskey='S' class="text powerwhite   anchor" style="display:block;;cursor:pointer;;;;" title="Sign Out ALT+S"><img id='mx57_image' src='../webclient/skins-20140301-2351/tivoli09/images/btn_signout.gif'  border='0' alt="Sign Out ALT+S" style='vertical-align:top;margin:0px;margin-left:3px;margin-right:3px;'/><span><span></span><span class='text hl hlak'>S</span><span>ign Out</span></span></span></div></td>
+				<td    nowrap="nowrap"  id="mx61_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx60_holder" class="bc"><span ctype="label"  id="mx60"   tabindex="0"    ev="help" targetid="mx60"  mxevent="click" accesskey='H' class="text powerwhite   anchor" style="display:block;;cursor:pointer;;;;" title="Help ALT+H"><img id='mx60_image' src='../webclient/skins-20140301-2351/tivoli09/images/btn_help.gif'  border='0' alt="Help ALT+H" style='vertical-align:top;margin:0px;margin-left:3px;margin-right:3px;'/><span><span></span><span class='text hl hlak'>H</span><span>elp</span></span></span></div></td>
+
+						</tr>
+					</table>
+				</td>
+				<td class="titlelogo">&nbsp;</td>
+			</tr>
+			
+ 
+			<tr>
+				<td class="titlebarbottom" colspan="20"></td>
+			</tr>
+
+		</table>
+	</td>
+				</tr>
+</table>
+</td>
+				</tr>
+								</table>
+							</div>
+						</td>
+					</tr>
+					<script>
+						var headerId = "mx23_0";
+						var headerScrollDivId = "mx23_0_div";
+					</script>
+				<tr   control="true" id="mx80_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx79_0"     valign="top" style="vertical-align:top;">	<div id="mx78" style="overflow: auto"> <!-- This is the clientarea -->
+<table role="presentation" control="true" id="mx77"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx106_0"    style="vertical-align:top;">
+				<td   colspan='2' nowrap="nowrap"  id="mx105_0"     valign="top" style="vertical-align:top;">
+
+<table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+		<td class="tabgroupback" role="main" >
+			<ul class="tabgroup" nowrap="nowrap" role="tablist"><li role="presentation" aria-selected="true" id="mx104_227987" ctype="tab"><a onkeydown="itemAKey(event,this)" role="tab" tabindex="0" nowrap="nowrap" href="Javascript: sendEvent('changesc','mx104','227987')" id="mx104_anchor_0" title="Service Request, Incident and Problem" class="text tablabelon on" onkeypress="if(event.keyCode==KEYCODE_SPACEBAR){sendEvent('changesc','mx104','227987')}" onfocus="setCurrentfocusId(event, this);">&nbsp;Service Request, Incident and Problem</a></li><li role="presentation"  id="mx104_227986" ctype="tab"><a onkeydown="itemAKey(event,this)" role="tab" tabindex="-1" nowrap="nowrap" onfocus="appendClass(this,'offhover')" onblur="removeClass(this,'offhover')" href="Javascript: sendEvent('changesc','mx104','227986')" id="mx104_anchor_1" title="Change" class="text tablabeloff off" onkeypress="if(event.keyCode==KEYCODE_SPACEBAR){sendEvent('changesc','mx104','227986')}" onfocus="setCurrentfocusId(event, this);">&nbsp;Change</a></li></ul>
+		 </td>
+	</tr>
+</table>
+</td>
+				</tr>
+				<tr   control="true" id="mx111_0"    style="vertical-align:top;">
+				<td   colspan='2' nowrap="nowrap"  id="mx110_0"  align="right"   valign="top" style="vertical-align:top;">
+
+		<table role="presentation" id="mx109" class='scoo'  border="0" width="100%" align="right">
+			<tr>
+				<td valign="top" align="right" nowrap>
+					<table role="presentation" border="0" cellpadding="2" bordercolor="#111111" align="right">
+					   <tr>
+									<td    nowrap="nowrap"  id="mx123_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx122_holder" class="bc"><span ctype="label"  id="mx122"   tabindex="0"    ev="227987" targetid="mx122"  mxevent="click"  class="text sco   anchor" style="display:block;;cursor:pointer;;;;" title="Change Content/Layout"><img id='mx122_image' src='../webclient/skins-20140301-2351/tivoli09/images/btn_changecontent.gif'  border='0' alt="Change Content/Layout" style='vertical-align:bottom;margin:0px;margin-left:3px;margin-right:3px;'/><span>Change Content/Layout</span></span></div></td>
+				<td    nowrap="nowrap"  id="mx126_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx125_holder" class="bc"><span ctype="label"  id="mx125"   tabindex="0"    ev="227987" targetid="mx125"  mxevent="click"  class="text sco   anchor" style="display:block;;cursor:pointer;;;;" title="Display Settings"><img id='mx125_image' src='../webclient/skins-20140301-2351/tivoli09/images/btn_displaysettings.gif'  border='0' alt="Display Settings" style='vertical-align:bottom;margin:0px;margin-left:3px;margin-right:3px;'/><span>Display Settings</span></span></div></td>
+				<td    nowrap="nowrap"  id="mx129_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx128_holder" class="bc"><span ctype="label"  id="mx128"   tabindex="0"    ev="227987" targetid="mx128"  mxevent="click"  class="text sco   anchor" style="display:block;;cursor:pointer;;;;" title="Update Start Center"><img id='mx128_image' src='../webclient/skins-20140301-2351/tivoli09/images/btn_updatestartcenter.gif'  border='0' alt="Update Start Center" style='vertical-align:bottom;margin:0px;margin-left:3px;margin-right:3px;'/><span>Update Start Center</span></span></div></td>
+
+				</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+</td>
+				</tr>
+				<tr   control="true" id="mx114_0"    style="vertical-align:top;">
+
+
+<td id="mx117" arial-live="polite"  width="30%" class="psc ppl" valign="top">
+
+			
+			<div id="portletbox_2739340" class="portletbox">
+				<table role="presentation" width='100%' border="0" cellspacing='0' cellpadding='0' class='pbt quickinsertportlet_pc' style="margin-bottom:10px">				<tr   control="true" id="mx137_0"    style="vertical-align:top;">
+		<td id="mx136" class="hbouter"  style="padding:0px;;white-space:nowrap;"  role="presentation">
+			<table cellspacing="0" cellpadding="0" style="width:100%;" class="" role="presentation">
+				<tr>
+						<td class="h_l"></td>
+					<td id="mx136_header_0"  align="left" class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx131_holder" class="bc"><h1 labelledby="mx131" style="display:inline" title="Quick Insert"><label ctype="label"  id="mx131"    noclick="1"  targetid="mx131"    class="text pt  " style="display:block;padding-left:2px;padding-top:2px;;;;;" title="Quick Insert">Quick Insert</label></h1></div></td>
+					<td id="mx136_header_1"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx132_holder" class="bc">	<div id="mx132" name="mx132" class="ts  "  >&nbsp;</div>
+</div></td>
+					<td id="mx136_header_2"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx133_holder" class="bc"><img sf="1"   ctype="image" alt="Edit Portlet"  src="../webclient/skins-20140301-2351/tivoli09/images/btn_editportlet.gif" source="btn_editportlet.gif" imgtype="" style="cursor:default;display:block;margin:0px" border="0"          id="mx133" tabindex="0" title="Edit Portlet"/></div></td>
+					<td id="mx136_header_3"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx134_holder" class="bc"><a  href="javascript: void(0);" ctype="toggleimage" ev="true" tabindex="0"  compid="mx134"   title="Minimize Portlet Window"><img id="mx134"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   " src="../webclient/skins-20140301-2351/tivoli09/images/btn_minimizeportlet.gif" source="btn_minimizeportlet.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Minimize Portlet Window"  /></a>
+</div></td>
+					<td id="mx136_header_4"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx135_holder" class="bc"><img sf="1"   ctype="image" alt="Remove Portlet"  src="../webclient/skins-20140301-2351/tivoli09/images/btn_removeportlet.gif" source="btn_removeportlet.gif" imgtype="" style="cursor:default;display:block;margin:0px" border="0"          id="mx135" tabindex="0" title="Remove Portlet"/></div></td>
+				<td style="padding-left:0px;" class="phbr" id="mx136_right" nowrap >
+				</td>
+					<td class="h_r"></td>
+				</tr>
+			</table>
+		</td>
+				</tr>
+				<tr   control="true" id="mx141_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx140_0"     valign="top" style="vertical-align:top;">
+
+<div aria-live="polite" aria-busy="true" id='portletbody_2739340_outer' style='display: inline; top:0;'>
+	<table aria-hidden="true" role="presentation" cellspacing="0" cellpadding="0" width="100%" height="100%">
+		<tr>
+			<td id='portletbody_2739340'>
+			</td>
+		</tr>	
+		<tr>
+			<td id="load_2739340" class="plinner plc"><img id="mx139_image" src="../webclient/skins-20140301-2351/tivoli09/images/progressbar.gif" alt="Loading" aria-label="Loading" class="pli" loadinglabel="Loading" refreshlabel="Reload"/></br>
+				<span id="mx139_retrylink" style="display:none">There was a problem loading the portlet. <a id='mx139_retryanchor' aria-label=Reload href="Javascript: refreshPortlet('mx139','Quick Insert&lt;!-- RICH TEXT --&gt;','2739340')"><img src='../webclient/skins-20140301-2351/tivoli09/images/small_refresh.png' alt='' style='vertical-align: bottom;border: 0px'/>Reload</a></span>
+			</td>	
+		</tr>
+	</table> 
+</div>                                         
+<script>
+	var def = {};
+	def["id"] = "mx139";
+	def["title"] = "Quick Insert&lt;!-- RICH TEXT --&gt;";
+	def["layoutId"] = "2739340";
+	def["headerId"] = "mx136";
+	def["reload"] = "Reload";
+	setupPortlet(def);
+	addLoadMethod("refreshPortlet('mx139', 'Quick Insert&lt;!-- RICH TEXT --&gt;', '2739340')");
+</script></td>
+				</tr>
+	
+				</table>
+			</div>	
+			
+			<div id="portletbox_2739342" class="portletbox">
+				<table role="presentation" width='100%' border="0" cellspacing='0' cellpadding='0' class='pbt favoriteappsportlet_pc' style="margin-bottom:10px">				<tr   control="true" id="mx149_0"    style="vertical-align:top;">
+		<td id="mx148" class="hbouter"  style="padding:0px;;white-space:nowrap;"  role="presentation">
+			<table cellspacing="0" cellpadding="0" style="width:100%;" class="" role="presentation">
+				<tr>
+						<td class="h_l"></td>
+					<td id="mx148_header_0"  align="left" class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx143_holder" class="bc"><h1 labelledby="mx143" style="display:inline" title="Favorite Applications"><label ctype="label"  id="mx143"    noclick="1"  targetid="mx143"    class="text pt  " style="display:block;padding-left:2px;padding-top:2px;;;;;" title="Favorite Applications">Favorite Applications</label></h1></div></td>
+					<td id="mx148_header_1"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx144_holder" class="bc">	<div id="mx144" name="mx144" class="ts  "  >&nbsp;</div>
+</div></td>
+					<td id="mx148_header_2"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx145_holder" class="bc"><img sf="1"   ctype="image" alt="Edit Portlet"  src="../webclient/skins-20140301-2351/tivoli09/images/btn_editportlet.gif" source="btn_editportlet.gif" imgtype="" style="cursor:default;display:block;margin:0px" border="0"          id="mx145" tabindex="0" title="Edit Portlet"/></div></td>
+					<td id="mx148_header_3"  align="right" class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx146_holder" class="bc"><a  href="javascript: void(0);" ctype="toggleimage" ev="true" tabindex="0"  compid="mx146"   title="Minimize Portlet Window"><img id="mx146"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   " src="../webclient/skins-20140301-2351/tivoli09/images/btn_minimizeportlet.gif" source="btn_minimizeportlet.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Minimize Portlet Window"  /></a>
+</div></td>
+					<td id="mx148_header_4"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx147_holder" class="bc"><img sf="1"   ctype="image" alt="Remove Portlet"  src="../webclient/skins-20140301-2351/tivoli09/images/btn_removeportlet.gif" source="btn_removeportlet.gif" imgtype="" style="cursor:default;display:block;margin:0px" border="0"          id="mx147" tabindex="0" title="Remove Portlet"/></div></td>
+				<td style="padding-left:0px;" class="phbr" id="mx148_right" nowrap >
+				</td>
+					<td class="h_r"></td>
+				</tr>
+			</table>
+		</td>
+				</tr>
+				<tr   control="true" id="mx153_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx152_0"     valign="top" style="vertical-align:top;">
+<div aria-live="polite" aria-busy="true" id='portletbody_2739342_outer' style='display: inline; top:0;'>
+	<table aria-hidden="true" role="presentation" cellspacing="0" cellpadding="0" width="100%" height="100%">
+		<tr>
+			<td id='portletbody_2739342'>
+			</td>
+		</tr>	
+		<tr>
+			<td id="load_2739342" class="plinner plc"><img id="mx151_image" src="../webclient/skins-20140301-2351/tivoli09/images/progressbar.gif" alt="Loading" aria-label="Loading" class="pli" loadinglabel="Loading" refreshlabel="Reload"/></br>
+				<span id="mx151_retrylink" style="display:none">There was a problem loading the portlet. <a id='mx151_retryanchor' aria-label=Reload href="javascript: sendEvent('refreshdata','mx151','refresh')"><img src='../webclient/skins-20140301-2351/tivoli09/images/small_refresh.png' alt='' style='vertical-align: bottom;border: 0px'/>Reload</a></span>
+			</td>	
+		</tr>
+	</table> 
+</div>                                         
+<script>
+	var def = {};
+	def["id"] = "mx151";
+	def["title"] = "Favorite Applications&lt;!-- RICH TEXT --&gt;";
+	def["layoutId"] = "2739342";
+	def["headerId"] = "mx148";
+	def["reload"] = "Reload";
+	setupPortlet(def);
+	addLoadMethod("refreshPortlet('mx151', 'Favorite Applications&lt;!-- RICH TEXT --&gt;', '2739342')");
+</script></td>
+				</tr>
+	
+				</table>
+			</div>	
+
+</td>
+
+
+<td id="mx120" arial-live="polite"  width="70%" class="psc ppr" valign="top">
+
+			
+			<div id="portletbox_2739348" class="portletbox">
+				<table role="presentation" width='100%' border="0" cellspacing='0' cellpadding='0' class='pbt bulletinboardportlet_pc' style="margin-bottom:10px">				<tr   control="true" id="mx167_0"    style="vertical-align:top;">
+		<td id="mx166" class="hbouter"  style="padding:0px;;white-space:nowrap;"  role="presentation">
+			<table cellspacing="0" cellpadding="0" style="width:100%;" class="" role="presentation">
+				<tr>
+						<td class="h_l"></td>
+					<td id="mx166_header_0"  align="absmiddle" class="bbps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx155_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/btn_bboard.gif" source="btn_bboard.gif" imgtype="" style="display:block;margin:0px" border="0"    class="bbpimg " align="absmiddle"    id="mx155" title=""/></div></td>
+					<td id="mx166_header_1"  align="left" class="bbps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx156_holder" class="bc"><h1 labelledby="mx156" style="display:inline" title="Bulletin Board"><label ctype="label"  id="mx156"    noclick="1"  targetid="mx156"    class="text bbpl  " style="display:block;padding-left:2px;padding-top:2px;;;;;" title="Bulletin Board">Bulletin Board</label></h1></div></td>
+					<td id="mx166_header_2"   class="bbps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx157_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/tablebtn_divider.gif" source="tablebtn_divider.gif" imgtype="" style="display:block;margin:0px" border="0"          id="mx157" title=""/></div></td>
+					<td id="mx166_header_3"   class="bbps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx158_holder" class="bc"><a  href="javascript: void(0);" ctype="toggleimage" ev="true" tabindex="0"  compid="mx158"   title="Close Filter CTRL+Z"><img id="mx158"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   " src="../webclient/skins-20140301-2351/tivoli09/images/tablebtn_filter_on.gif" source="tablebtn_filter_on.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Close Filter CTRL+Z"  /></a>
+</div></td>
+					<td id="mx166_header_4"  align="left" class="bbps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx159_holder" class="bc"><span ctype="label"  id="mx159"   tabindex="0"     targetid="mx159"  mxevent="click"  class="text tht   anchor" style="display:block;padding-left:2px;padding-top:2px;;cursor:pointer;;;;" title="Filter">Filter</span></div></td>
+					<td id="mx166_header_5"   class="bbps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx160_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/img_arrow_quickfilter.gif" source="img_arrow_quickfilter.gif" imgtype="" style="display:block;margin:0px" border="0"          id="mx160" title=""/></div></td>
+					<td id="mx166_header_6"   class="bbps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx161_holder" class="bc"><a  href="javascript: void(0);" ctype="toggleimage" ev="true" tabindex="0"  compid="mx161"   title="Filter Table"><img id="mx161"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   " src="../webclient/skins-20140301-2351/tivoli09/images/qf_find.gif" source="qf_find.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Filter Table"  /></a>
+</div></td>
+					<td id="mx166_header_7"   class="bbps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx162_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/tablebtn_divider.gif" source="tablebtn_divider.gif" imgtype="" style="display:block;margin:0px" border="0"          id="mx162" title=""/></div></td>
+					<td id="mx166_header_8"   class="bbps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx163_holder" class="bc"><a ctype="toggleimage" ev="false" tabindex="-1" active="0" compid="mx163"   title="" disabled="disabled"><img id="mx163"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   opacity_30" src="../webclient/skins-20140301-2351/tivoli09/images/qf_clear_disabled.gif" source="qf_clear_disabled.gif" imgtype="" ev="false" align="top" style="display:block;margin:0px;"  alt=""  /></a>
+</div></td>
+					<td id="mx166_header_9"   class="bbps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx164_holder" class="bc">	<div id="mx164" name="mx164" class="ts  "  >&nbsp;</div>
+</div></td>
+					<td id="mx166_header_10"   class="bbps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx165_holder" class="bc"><img sf="1"   ctype="image" alt="Remove Portlet"  src="../webclient/skins-20140301-2351/tivoli09/images/btn_removeportlet.gif" source="btn_removeportlet.gif" imgtype="" style="cursor:default;display:block;margin:0px" border="0"          id="mx165" tabindex="0" title="Remove Portlet"/></div></td>
+					<td class="h_r"></td>
+				</tr>
+			</table>
+		</td>
+				</tr>
+				<tr   control="true" id="mx170_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx169_0"     valign="top" style="vertical-align:top;">
+<div aria-live="polite" aria-busy="true" id='portletbody_2739348_outer' style='display: inline; top:0;'>
+	<table aria-hidden="true" role="presentation" cellspacing="0" cellpadding="0" width="100%" height="100%">
+		<tr>
+			<td id='portletbody_2739348'>
+			</td>
+		</tr>	
+		<tr>
+			<td id="load_2739348" class="plinner plc"><img id="mx168_image" src="../webclient/skins-20140301-2351/tivoli09/images/progressbar.gif" alt="Loading" aria-label="Loading" class="pli" loadinglabel="Loading" refreshlabel="Reload"/></br>
+				<span id="mx168_retrylink" style="display:none">There was a problem loading the portlet. <a id='mx168_retryanchor' aria-label=Reload href="Javascript: refreshPortlet('mx168','Bulletin Board&lt;!-- RICH TEXT --&gt;','2739348')"><img src='../webclient/skins-20140301-2351/tivoli09/images/small_refresh.png' alt='' style='vertical-align: bottom;border: 0px'/>Reload</a></span>
+			</td>	
+		</tr>
+	</table> 
+</div>                                         
+<script>
+	var def = {};
+	def["id"] = "mx168";
+	def["title"] = "Bulletin Board&lt;!-- RICH TEXT --&gt;";
+	def["layoutId"] = "2739348";
+	def["headerId"] = "mx166";
+	def["reload"] = "Reload";
+	setupPortlet(def);
+	addLoadMethod("refreshPortlet('mx168', 'Bulletin Board&lt;!-- RICH TEXT --&gt;', '2739348')");
+</script></td>
+				</tr>
+	
+				</table>
+			</div>	
+			
+			<div id="portletbox_2739344" class="portletbox">
+				<table role="presentation" width='100%' border="0" cellspacing='0' cellpadding='0' class='pbt resultsetportlet_pc' style="margin-bottom:10px">				<tr   control="true" id="mx187_0"    style="vertical-align:top;">
+		<td id="mx186" class="hbouter"  style="padding:0px;;white-space:nowrap;"  role="presentation">
+			<table cellspacing="0" cellpadding="0" style="width:100%;" class="" role="presentation">
+				<tr>
+						<td class="h_l"></td>
+					<td id="mx186_header_0"  align="left" class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx172_holder" class="bc"><h1 labelledby="mx172" style="display:inline" title="Tickets Assigned to Me"><label ctype="label"  id="mx172"    noclick="1"  targetid="mx172"    class="text pt  " style="display:block;padding-left:2px;padding-top:2px;;;;;" title="Tickets Assigned to Me">Tickets Assigned to Me</label></h1></div></td>
+					<td id="mx186_header_1"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx173_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/tablebtn_divider.gif" source="tablebtn_divider.gif" imgtype="" style="display:block;margin:0px" border="0"          id="mx173" title=""/></div></td>
+					<td id="mx186_header_2"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx174_holder" class="bc"><a  href="javascript: void(0);" ctype="toggleimage" ev="true" tabindex="0"  compid="mx174"   title="Close Filter CTRL+Z"><img id="mx174"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   " src="../webclient/skins-20140301-2351/tivoli09/images/tablebtn_filter_on.gif" source="tablebtn_filter_on.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Close Filter CTRL+Z"  /></a>
+</div></td>
+					<td id="mx186_header_3"  align="left" class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx175_holder" class="bc"><span ctype="label"  id="mx175"   tabindex="0"     targetid="mx175"  mxevent="click"  class="text tht   anchor" style="display:block;padding-left:2px;padding-top:2px;;cursor:pointer;;;;" title="Filter">Filter</span></div></td>
+					<td id="mx186_header_4"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx176_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/img_arrow_quickfilter.gif" source="img_arrow_quickfilter.gif" imgtype="" style="display:block;margin:0px" border="0"          id="mx176" title=""/></div></td>
+					<td id="mx186_header_5"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx177_holder" class="bc"><a  href="javascript: void(0);" ctype="toggleimage" ev="true" tabindex="0"  compid="mx177"   title="Filter Table"><img id="mx177"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   " src="../webclient/skins-20140301-2351/tivoli09/images/qf_find.gif" source="qf_find.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Filter Table"  /></a>
+</div></td>
+					<td id="mx186_header_6"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx178_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/tablebtn_divider.gif" source="tablebtn_divider.gif" imgtype="" style="display:block;margin:0px" border="0"          id="mx178" title=""/></div></td>
+					<td id="mx186_header_7"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx179_holder" class="bc"><a ctype="toggleimage" ev="false" tabindex="-1" active="0" compid="mx179"   title="" disabled="disabled"><img id="mx179"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   opacity_30" src="../webclient/skins-20140301-2351/tivoli09/images/qf_clear_disabled.gif" source="qf_clear_disabled.gif" imgtype="" ev="false" align="top" style="display:block;margin:0px;"  alt=""  /></a>
+</div></td>
+					<td id="mx186_header_8"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx180_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/tablebtn_divider.gif" source="tablebtn_divider.gif" imgtype="" style="display:block;margin:0px" border="0"          id="mx180" title=""/></div></td>
+					<td id="mx186_header_9"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx181_holder" class="bc"><img sf="1"   ctype="image" alt="Open result set in the application"  src="../webclient/skins-20140301-2351/tivoli09/images/btn_openInApp.gif" source="btn_openInApp.gif" imgtype="" style="cursor:default;display:block;margin:0px" border="0"          id="mx181" tabindex="0" title="Open result set in the application"/></div></td>
+					<td id="mx186_header_10"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx182_holder" class="bc">	<div id="mx182" name="mx182" class="ts  "  >&nbsp;</div>
+</div></td>
+					<td id="mx186_header_11"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx183_holder" class="bc"><img sf="1"   ctype="image" alt="Edit Portlet"  src="../webclient/skins-20140301-2351/tivoli09/images/btn_editportlet.gif" source="btn_editportlet.gif" imgtype="" style="cursor:default;display:block;margin:0px" border="0"          id="mx183" tabindex="0" title="Edit Portlet"/></div></td>
+					<td id="mx186_header_12"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx184_holder" class="bc"><a  href="javascript: void(0);" ctype="toggleimage" ev="true" tabindex="0"  compid="mx184"   title="Minimize Portlet Window"><img id="mx184"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   " src="../webclient/skins-20140301-2351/tivoli09/images/btn_minimizeportlet.gif" source="btn_minimizeportlet.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Minimize Portlet Window"  /></a>
+</div></td>
+					<td id="mx186_header_13"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx185_holder" class="bc"><img sf="1"   ctype="image" alt="Remove Portlet"  src="../webclient/skins-20140301-2351/tivoli09/images/btn_removeportlet.gif" source="btn_removeportlet.gif" imgtype="" style="cursor:default;display:block;margin:0px" border="0"          id="mx185" tabindex="0" title="Remove Portlet"/></div></td>
+				<td style="padding-left:0px;" class="phbr" id="mx186_right" nowrap >
+				</td>
+					<td class="h_r"></td>
+				</tr>
+			</table>
+		</td>
+				</tr>
+				<tr   control="true" id="mx190_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx189_0"     valign="top" style="vertical-align:top;">
+<div aria-live="polite" aria-busy="true" id='portletbody_2739344_outer' style='display: inline; top:0;'>
+	<table aria-hidden="true" role="presentation" cellspacing="0" cellpadding="0" width="100%" height="100%">
+		<tr>
+			<td id='portletbody_2739344'>
+			</td>
+		</tr>	
+		<tr>
+			<td id="load_2739344" class="plinner plc"><img id="mx188_image" src="../webclient/skins-20140301-2351/tivoli09/images/progressbar.gif" alt="Loading" aria-label="Loading" class="pli" loadinglabel="Loading" refreshlabel="Reload"/></br>
+				<span id="mx188_retrylink" style="display:none">There was a problem loading the portlet. <a id='mx188_retryanchor' aria-label=Reload href="Javascript: refreshPortlet('mx188','Tickets Assigned to Me&lt;!-- RICH TEXT --&gt;','2739344')"><img src='../webclient/skins-20140301-2351/tivoli09/images/small_refresh.png' alt='' style='vertical-align: bottom;border: 0px'/>Reload</a></span>
+			</td>	
+		</tr>
+	</table> 
+</div>                                         
+<script>
+	var def = {};
+	def["id"] = "mx188";
+	def["title"] = "Tickets Assigned to Me&lt;!-- RICH TEXT --&gt;";
+	def["layoutId"] = "2739344";
+	def["headerId"] = "mx186";
+	def["reload"] = "Reload";
+	setupPortlet(def);
+	addLoadMethod("refreshPortlet('mx188', 'Tickets Assigned to Me&lt;!-- RICH TEXT --&gt;', '2739344')");
+</script></td>
+				</tr>
+	
+				</table>
+			</div>	
+			
+			<div id="portletbox_2739346" class="portletbox">
+				<table role="presentation" width='100%' border="0" cellspacing='0' cellpadding='0' class='pbt resultsetportlet_pc' style="margin-bottom:10px">				<tr   control="true" id="mx207_0"    style="vertical-align:top;">
+		<td id="mx206" class="hbouter"  style="padding:0px;;white-space:nowrap;"  role="presentation">
+			<table cellspacing="0" cellpadding="0" style="width:100%;" class="" role="presentation">
+				<tr>
+						<td class="h_l"></td>
+					<td id="mx206_header_0"  align="left" class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx192_holder" class="bc"><h1 labelledby="mx192" style="display:inline" title="Tickets Assigned to My Group&#040;s&#041;"><label ctype="label"  id="mx192"    noclick="1"  targetid="mx192"    class="text pt  " style="display:block;padding-left:2px;padding-top:2px;;;;;" title="Tickets Assigned to My Group(s)">Tickets Assigned to My Group(s)</label></h1></div></td>
+					<td id="mx206_header_1"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx193_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/tablebtn_divider.gif" source="tablebtn_divider.gif" imgtype="" style="display:block;margin:0px" border="0"          id="mx193" title=""/></div></td>
+					<td id="mx206_header_2"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx194_holder" class="bc"><a  href="javascript: void(0);" ctype="toggleimage" ev="true" tabindex="0"  compid="mx194"   title="Close Filter CTRL+Z"><img id="mx194"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   " src="../webclient/skins-20140301-2351/tivoli09/images/tablebtn_filter_on.gif" source="tablebtn_filter_on.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Close Filter CTRL+Z"  /></a>
+</div></td>
+					<td id="mx206_header_3"  align="left" class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx195_holder" class="bc"><span ctype="label"  id="mx195"   tabindex="0"     targetid="mx195"  mxevent="click"  class="text tht   anchor" style="display:block;padding-left:2px;padding-top:2px;;cursor:pointer;;;;" title="Filter">Filter</span></div></td>
+					<td id="mx206_header_4"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx196_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/img_arrow_quickfilter.gif" source="img_arrow_quickfilter.gif" imgtype="" style="display:block;margin:0px" border="0"          id="mx196" title=""/></div></td>
+					<td id="mx206_header_5"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx197_holder" class="bc"><a  href="javascript: void(0);" ctype="toggleimage" ev="true" tabindex="0"  compid="mx197"   title="Filter Table"><img id="mx197"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   " src="../webclient/skins-20140301-2351/tivoli09/images/qf_find.gif" source="qf_find.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Filter Table"  /></a>
+</div></td>
+					<td id="mx206_header_6"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx198_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/tablebtn_divider.gif" source="tablebtn_divider.gif" imgtype="" style="display:block;margin:0px" border="0"          id="mx198" title=""/></div></td>
+					<td id="mx206_header_7"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx199_holder" class="bc"><a ctype="toggleimage" ev="false" tabindex="-1" active="0" compid="mx199"   title="" disabled="disabled"><img id="mx199"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   opacity_30" src="../webclient/skins-20140301-2351/tivoli09/images/qf_clear_disabled.gif" source="qf_clear_disabled.gif" imgtype="" ev="false" align="top" style="display:block;margin:0px;"  alt=""  /></a>
+</div></td>
+					<td id="mx206_header_8"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx200_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/tablebtn_divider.gif" source="tablebtn_divider.gif" imgtype="" style="display:block;margin:0px" border="0"          id="mx200" title=""/></div></td>
+					<td id="mx206_header_9"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx201_holder" class="bc"><img sf="1"   ctype="image" alt="Open result set in the application"  src="../webclient/skins-20140301-2351/tivoli09/images/btn_openInApp.gif" source="btn_openInApp.gif" imgtype="" style="cursor:default;display:block;margin:0px" border="0"          id="mx201" tabindex="0" title="Open result set in the application"/></div></td>
+					<td id="mx206_header_10"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx202_holder" class="bc">	<div id="mx202" name="mx202" class="ts  "  >&nbsp;</div>
+</div></td>
+					<td id="mx206_header_11"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx203_holder" class="bc"><img sf="1"   ctype="image" alt="Edit Portlet"  src="../webclient/skins-20140301-2351/tivoli09/images/btn_editportlet.gif" source="btn_editportlet.gif" imgtype="" style="cursor:default;display:block;margin:0px" border="0"          id="mx203" tabindex="0" title="Edit Portlet"/></div></td>
+					<td id="mx206_header_12"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx204_holder" class="bc"><a  href="javascript: void(0);" ctype="toggleimage" ev="true" tabindex="0"  compid="mx204"   title="Minimize Portlet Window"><img id="mx204"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   " src="../webclient/skins-20140301-2351/tivoli09/images/btn_minimizeportlet.gif" source="btn_minimizeportlet.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Minimize Portlet Window"  /></a>
+</div></td>
+					<td id="mx206_header_13"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx205_holder" class="bc"><img sf="1"   ctype="image" alt="Remove Portlet"  src="../webclient/skins-20140301-2351/tivoli09/images/btn_removeportlet.gif" source="btn_removeportlet.gif" imgtype="" style="cursor:default;display:block;margin:0px" border="0"          id="mx205" tabindex="0" title="Remove Portlet"/></div></td>
+				<td style="padding-left:0px;" class="phbr" id="mx206_right" nowrap >
+				</td>
+					<td class="h_r"></td>
+				</tr>
+			</table>
+		</td>
+				</tr>
+				<tr   control="true" id="mx210_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx209_0"     valign="top" style="vertical-align:top;">
+<div aria-live="polite" aria-busy="true" id='portletbody_2739346_outer' style='display: inline; top:0;'>
+	<table aria-hidden="true" role="presentation" cellspacing="0" cellpadding="0" width="100%" height="100%">
+		<tr>
+			<td id='portletbody_2739346'>
+			</td>
+		</tr>	
+		<tr>
+			<td id="load_2739346" class="plinner plc"><img id="mx208_image" src="../webclient/skins-20140301-2351/tivoli09/images/progressbar.gif" alt="Loading" aria-label="Loading" class="pli" loadinglabel="Loading" refreshlabel="Reload"/></br>
+				<span id="mx208_retrylink" style="display:none">There was a problem loading the portlet. <a id='mx208_retryanchor' aria-label=Reload href="Javascript: refreshPortlet('mx208','Tickets Assigned to My Group&#040;s&#041;&lt;!-- RICH TEXT --&gt;','2739346')"><img src='../webclient/skins-20140301-2351/tivoli09/images/small_refresh.png' alt='' style='vertical-align: bottom;border: 0px'/>Reload</a></span>
+			</td>	
+		</tr>
+	</table> 
+</div>                                         
+<script>
+	var def = {};
+	def["id"] = "mx208";
+	def["title"] = "Tickets Assigned to My Group&#040;s&#041;&lt;!-- RICH TEXT --&gt;";
+	def["layoutId"] = "2739346";
+	def["headerId"] = "mx206";
+	def["reload"] = "Reload";
+	setupPortlet(def);
+	addLoadMethod("refreshPortlet('mx208', 'Tickets Assigned to My Group&#040;s&#041;&lt;!-- RICH TEXT --&gt;', '2739346')");
+</script></td>
+				</tr>
+	
+				</table>
+			</div>	
+			
+			<div id="portletbox_5086710" class="portletbox">
+				<table role="presentation" width='100%' border="0" cellspacing='0' cellpadding='0' class='pbt resultsetportlet_pc' style="margin-bottom:10px">				<tr   control="true" id="mx227_0"    style="vertical-align:top;">
+		<td id="mx226" class="hbouter"  style="padding:0px;;white-space:nowrap;"  role="presentation">
+			<table cellspacing="0" cellpadding="0" style="width:100%;" class="" role="presentation">
+				<tr>
+						<td class="h_l"></td>
+					<td id="mx226_header_0"  align="left" class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx212_holder" class="bc"><h1 labelledby="mx212" style="display:inline" title="My Team"><label ctype="label"  id="mx212"    noclick="1"  targetid="mx212"    class="text pt  " style="display:block;padding-left:2px;padding-top:2px;;;;;" title="My Team">My Team</label></h1></div></td>
+					<td id="mx226_header_1"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx213_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/tablebtn_divider.gif" source="tablebtn_divider.gif" imgtype="" style="display:block;margin:0px" border="0"          id="mx213" title=""/></div></td>
+					<td id="mx226_header_2"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx214_holder" class="bc"><a  href="javascript: void(0);" ctype="toggleimage" ev="true" tabindex="0"  compid="mx214"   title="Close Filter CTRL+Z"><img id="mx214"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   " src="../webclient/skins-20140301-2351/tivoli09/images/tablebtn_filter_on.gif" source="tablebtn_filter_on.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Close Filter CTRL+Z"  /></a>
+</div></td>
+					<td id="mx226_header_3"  align="left" class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx215_holder" class="bc"><span ctype="label"  id="mx215"   tabindex="0"     targetid="mx215"  mxevent="click"  class="text tht   anchor" style="display:block;padding-left:2px;padding-top:2px;;cursor:pointer;;;;" title="Filter">Filter</span></div></td>
+					<td id="mx226_header_4"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx216_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/img_arrow_quickfilter.gif" source="img_arrow_quickfilter.gif" imgtype="" style="display:block;margin:0px" border="0"          id="mx216" title=""/></div></td>
+					<td id="mx226_header_5"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx217_holder" class="bc"><a  href="javascript: void(0);" ctype="toggleimage" ev="true" tabindex="0"  compid="mx217"   title="Filter Table"><img id="mx217"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   " src="../webclient/skins-20140301-2351/tivoli09/images/qf_find.gif" source="qf_find.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Filter Table"  /></a>
+</div></td>
+					<td id="mx226_header_6"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx218_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/tablebtn_divider.gif" source="tablebtn_divider.gif" imgtype="" style="display:block;margin:0px" border="0"          id="mx218" title=""/></div></td>
+					<td id="mx226_header_7"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx219_holder" class="bc"><a ctype="toggleimage" ev="false" tabindex="-1" active="0" compid="mx219"   title="" disabled="disabled"><img id="mx219"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   opacity_30" src="../webclient/skins-20140301-2351/tivoli09/images/qf_clear_disabled.gif" source="qf_clear_disabled.gif" imgtype="" ev="false" align="top" style="display:block;margin:0px;"  alt=""  /></a>
+</div></td>
+					<td id="mx226_header_8"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx220_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/tablebtn_divider.gif" source="tablebtn_divider.gif" imgtype="" style="display:block;margin:0px" border="0"          id="mx220" title=""/></div></td>
+					<td id="mx226_header_9"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width:100%;><div aria-live="polite" id="mx221_holder" class="bc"><img sf="1"   ctype="image" alt="Open result set in the application"  src="../webclient/skins-20140301-2351/tivoli09/images/btn_openInApp.gif" source="btn_openInApp.gif" imgtype="" style="cursor:default;display:block;margin:0px" border="0"          id="mx221" tabindex="0" title="Open result set in the application"/></div></td>
+					<td id="mx226_header_10"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx222_holder" class="bc">	<div id="mx222" name="mx222" class="ts  "  >&nbsp;</div>
+</div></td>
+					<td id="mx226_header_11"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx223_holder" class="bc"><img sf="1"   ctype="image" alt="Edit Portlet"  src="../webclient/skins-20140301-2351/tivoli09/images/btn_editportlet.gif" source="btn_editportlet.gif" imgtype="" style="cursor:default;display:block;margin:0px" border="0"          id="mx223" tabindex="0" title="Edit Portlet"/></div></td>
+					<td id="mx226_header_12"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx224_holder" class="bc"><a  href="javascript: void(0);" ctype="toggleimage" ev="true" tabindex="0"  compid="mx224"   title="Minimize Portlet Window"><img id="mx224"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   " src="../webclient/skins-20140301-2351/tivoli09/images/btn_minimizeportlet.gif" source="btn_minimizeportlet.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Minimize Portlet Window"  /></a>
+</div></td>
+					<td id="mx226_header_13"   class="ps   hbsh" valign="middle" style="padding:0px;white-space:nowrap;" width="100%"><div aria-live="polite" id="mx225_holder" class="bc"><img sf="1"   ctype="image" alt="Remove Portlet"  src="../webclient/skins-20140301-2351/tivoli09/images/btn_removeportlet.gif" source="btn_removeportlet.gif" imgtype="" style="cursor:default;display:block;margin:0px" border="0"          id="mx225" tabindex="0" title="Remove Portlet"/></div></td>
+				<td style="padding-left:0px;" class="phbr" id="mx226_right" nowrap >
+				</td>
+					<td class="h_r"></td>
+				</tr>
+			</table>
+		</td>
+				</tr>
+				<tr   control="true" id="mx230_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx229_0"     valign="top" style="vertical-align:top;">
+<div aria-live="polite" aria-busy="true" id='portletbody_5086710_outer' style='display: inline; top:0;'>
+	<table aria-hidden="true" role="presentation" cellspacing="0" cellpadding="0" width="100%" height="100%">
+		<tr>
+			<td id='portletbody_5086710'>
+			</td>
+		</tr>	
+		<tr>
+			<td id="load_5086710" class="plinner plc"><img id="mx228_image" src="../webclient/skins-20140301-2351/tivoli09/images/progressbar.gif" alt="Loading" aria-label="Loading" class="pli" loadinglabel="Loading" refreshlabel="Reload"/></br>
+				<span id="mx228_retrylink" style="display:none">There was a problem loading the portlet. <a id='mx228_retryanchor' aria-label=Reload href="Javascript: refreshPortlet('mx228','My Team&lt;!-- RICH TEXT --&gt;','5086710')"><img src='../webclient/skins-20140301-2351/tivoli09/images/small_refresh.png' alt='' style='vertical-align: bottom;border: 0px'/>Reload</a></span>
+			</td>	
+		</tr>
+	</table> 
+</div>                                         
+<script>
+	var def = {};
+	def["id"] = "mx228";
+	def["title"] = "My Team&lt;!-- RICH TEXT --&gt;";
+	def["layoutId"] = "5086710";
+	def["headerId"] = "mx226";
+	def["reload"] = "Reload";
+	setupPortlet(def);
+	addLoadMethod("refreshPortlet('mx228', 'My Team&lt;!-- RICH TEXT --&gt;', '5086710')");
+</script></td>
+				</tr>
+	
+				</table>
+			</div>	
+
+</td>
+				</tr>
+
+		<tr>
+			<td id="mx91"  control="true" style="vertical-align:top;">
+	
+		<div id="mx91_compHolder" aria-live="polite"  style="padding:0px;margin:0px;vertical-align:top;height: 100%;display:"  >
+		
+			<table id="mx91_inner" role="presentation"  cellspacing="0" class="so   " cellpadding="0" height="100%" width="100%"   style="vertical-align:top;" ><tr id="mx91_1"  style="vertical-align:top;display:;" > 
+	<td id="mx90" aria-live="polite"      style="display:;white-space:nowrap;padding-bottom: 2px;" class="section   " valign="top"  ><table role="presentation" control="true" id="mx89"   width="100%"  class="   borderSpacer" summary=""  style="width:100%;;;vertical-align:top">				<td    nowrap="nowrap"  id="mx94_0"  align="left"   valign="top" style="vertical-align:top;"></td>
+</table>
+</td>
+		</tr>
+		
+			</table>
+		</div>
+	
+			</td>
+		</tr>
+	</table>
+	</div>
+	<script>
+		clientAreaId = "mx78";
+		var SYSTEMNAVBAR = false; 
+		var adjacentColumn = null;
+		dojo.connect(window, "resize", sizeClientArea);
+		addLoadMethod("sizeClientArea()");
+		dojo.subscribe("maintabchange", null, function(message){
+			var clientArea = dojo.byId("mx78");
+			if(clientArea) {
+				clientArea.scrollTop = 0;
+				clientArea.scrollLeft = 0;
+			}
+		});
+	</script>
+</td>
+				</tr>
+				<tr   control="true" id="mx102_0"    style="vertical-align:top;">
+				<td   colspan='20' nowrap="nowrap"  id="mx101_0"     valign="top" style="vertical-align:top;"><div id="mx100" width="100%"  valign="top" nowrap="nowrap" class=" abs " style="display:block;"></div></td>
+				</tr>
+</table>
+</td>
+				</tr>
+</table></td>
+				</tr>
+</table></td>
+				</tr>
+	</table>
+	<table id="dialogholder" style="position:absolute;top:0px;left:0px;" role="presentation">
+		<tr>
+			<td id="dialogholdertd" width="100%" aria-live="polite"></td>
+			<td id="popupholdertd" width="100%" onClick="cancelBubble(event);" aria-live="polite" role="presentation"></td>
+		</tr>
+	</table>
+
+<!-- Begin WARNING DIALOG -->
+<div id="warndiv" style="" aria-hidden="true" onclick="handleWarnDialog('close')"  role="alert">
+	<div id='warndiv_inner_dialogwait' style="display:none" class='wait_modal'>&nbsp;</div>
+	<table id="warndiv_inner" positionX="" positionY="" tabindex="0" modal="true" width="400" role="presentation" class="dsc1 dh mc modal" border="0" defaultbutton="" style="display: none" aria-hidden="true" >
+		<tr style="" valign="top">
+			<td valign="BOTTOM" style="padding:0px;" class="dh mh dhb">
+				<table id="warndiv_content0" width="100%" role="presentation">
+					<tr>
+						
+						<td align="left" class="" valign="middle" style="padding:0px;" nowrap="nowrap">
+							<h1 style="display:inline" title="System Message"><span align='left' ctype="label" noclick="1" targetid="mx696" class="text dh mh " style="display:block;padding-left:2px;padding-top:2px;;;;" title="System Message">System Message</span></h1>
+						</td>
+						<td class="" valign="middle" style="padding:0px;" width="100%" nowrap="nowrap">
+							<div nowrap="nowrap" needsrefresh="false" vis="true" class="bc dhbsh" style="display:inline;">
+								<div class="ts dh mh " >&nbsp;</div>
+							</div>
+						</td>
+						<td align="right" class="" valign="middle" style="padding:0px;" width="100%" nowrap="nowrap">
+							<div nowrap="nowrap" needsrefresh="false" vis="true" class="bc dhbsh" style="display:inline;"><img sf="1" ctype="image" tabindex="0" src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" imgtype="" alt="" style="cursor:default;display:block;margin:0px" border="0" dialog="1" align="right" /></div>
+						</td>
+						<td align="right" class="" valign="middle" style="padding:0px;" width="100%" nowrap="nowrap">
+							<div nowrap="nowrap" needsrefresh="false" vis="true" class="bc dhbsh" style="display:inline;"><img sf="1" active="0" ctype="image" tabindex="-1" src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" imgtype="" alt="" style="display:block;margin:0px" border="0" dialog="1" align="right" /></div>
+						</td>
+						<td align="right" class="" valign="middle" style="padding:0px;" width="100%" nowrap="nowrap">
+							<div nowrap="nowrap" needsrefresh="false" vis="true" class="bc dhbsh" style="display:inline;"><img sf="1" ctype="image" tabindex="0" src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" imgtype="" alt="" style="cursor:default;display:block;margin:0px" border="0" dialog="1" align="right" /></div>
+						</td>
+						<td align="right" class="" valign="middle" style="padding:0px;" width="100%" nowrap="nowrap">
+							<div nowrap="nowrap" needsrefresh="false" vis="true" class="bc dhbsh" style="display:inline;"><img sf="1" active="0" ctype="image" tabindex="-1" src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" imgtype="" alt="" style="display:block;margin:0px" border="0" dialog="1" align="right" /></div>
+						</td>
+						
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr style="" valign="top">
+			<td valign="BOTTOM" style="padding:0px;">
+				<table class="dialogb" width="100%" style="position:relative;top:0px;margin:0px;" height="100%" role="presentation">
+					<tr>
+						<td class="" style=";padding:0px;" align="">
+							<table width="100%" height="*" role="presentation">
+								<tr>
+									<td style="height:100%;padding:10px;" align="">&nbsp;</td>
+								</tr>
+							</table>
+							<table width="100%" height="-50px" role="presentation">
+								<tr>
+									<td class="db ml " style="height:100%;padding:10px;" align="">
+										<div id="warndiv_bodydiv">
+											<h1 style="display:inline" title="">
+											<span id="warndiv_warnmsg" class="text ml " style="display:block;padding-left:2px;padding-top:2px;;;;" title=" " aria-live="polite">WARN MESSAGE</span>
+											</h1>
+										</div>
+									</td>
+								</tr>
+							</table>
+							<table width="100%" height="*" role="presentation">
+								<tr>
+									<td align="right" nowrap="nowrap">
+										<div nowrap="nowrap" needsrefresh="false" vis="true" class="bc" style="display:inline;">
+											<button type="button" control="true" style="" class="text pb default" onmouseover="appendClass(this,'pbo')" onmouseout="removeClass(this,'pbo')">
+											&nbsp;&nbsp;OK&nbsp;&nbsp;
+											</button>
+										</div>
+									</td>
+								</tr>
+							</table>
+							<img tabindex="0" alt="" role="button" onfocus="moveable_onfocus(this);" src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" width="1" height="1" lastbuttonid="" aria-hidden="true"/>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+<script type="text/javascript">
+window.setTimeout("if(dojo.byId('warndiv_inner')){dojo.require('dojo.dnd.move');var warndivDnD = new dojo.dnd.move.constrainedMoveable(dojo.byId('warndiv_inner'),{constraints : function(){var d=dojo.byId('warndiv_inner'); return {'t':0, 'l':-1*(d.clientWidth-50)};}, within: true, skip: true, handle: dojo.byId('warndiv_content0')});}",500);
+</script>
+<!-- End WARNING DIALOG -->		<div id="wait" width="100%" height="100%" class="wait" style="position:absolute;top:0px;left:0px;height:100%;width:100%">&nbsp;</div>
+
+	<div aria-hidden="true" id="HF" class="dsc1" style="padding:2px;left:0;top:0;z-index:50000;background:#E7E7E7;border:1px solid #999999;display:none;position:absolute;">
+	<div aria-hidden="true" class="dh mh dhb">Hidden Form</div>
+	<form aria-hidden="true" id="hiddenform" name="hiddenform" method="POST" action="https://w3-01.ibm.com/itd/igaism/ui/maximo.jsp" style="padding:3px;">
+		<input type="text" size="45" name="event" id="event"  title="event type"/><br />
+		<input type="text" size="45" name="targetid" id="targetid" title="target id" /><br />
+		<input type="hidden" size="45" name="value" id="value" /><!-- this must be type hidden to support \n in the value -->
+		<input type="text" size="45" name="changedcomponentid" id="changedcomponentid"  title="changed component id"/><br />
+		<input type="text" size="45" name="vischangedcomponentvalue" id="vischangedcomponentvalue" title="changed component value"/><br />
+		<input type="hidden" name="changedcomponentvalue" />
+		<input type="text" size="45" name="currentfocus" id="currentfocus" title="focus id" /><br />
+		<input name="scrollleftpos" id="scrollleftpos" size="45" title="Scroll Left"/><br />
+		<input name="scrolltoppos" id="scrolltoppos" size="45"  title="Scroll Top"/><br />
+		<input type="text" size="45" name="uisessionid" id="uisessionid" value="4235" class="fld_ro" readonly="readonly" title="ui session id"/><br />
+		<input type="text" size="45" name="csrftokenholder" id="csrftokenholder" value="hvs0vl0eno51gvmassb0g2ebbi" title="CSRF Token" readonly="readonly" class="fld_ro"/><br />
+	</form>
+	</div>
+<script>
+	//supported data types
+	var CS_VALIDATE_OK_LABEL = "OK";
+	var CS_VALIDATE_REVERT = "Go Back";
+	var DATA_TYPES = {
+		"date":0,
+		"upper":1,
+		"lower":2,
+		"date":3,
+		"datetime":4,
+		"time":5,
+		"integer":6,
+		"smallint":7,
+		"bigint":19,
+		"decimal":9,
+		"float":8,
+		"duration":10,
+		"amount":11
+	};
+	var NUMERIC_CHARS = new Array("\\.",",","-"," ");
+	var DATA_TYPE_ERRORS = {
+		3:"The date format is not valid. Use the date format defined by your locale, or use the calendar control to enter a date. (BMXAA4143E)",
+		4:"The date/time format is not valid. Make sure the date/time is specified in a valid format supported by the current locale setting. (BMXAA4144E)",
+		5:"The time format is not valid. Make sure a valid value is entered that conforms to the date time properties of the current locale. (BMXAA4155E)",
+		6:"The entered value {0} is not valid. Enter a valid integer value. (BMXAA7094E)",
+		7:"The entered value {0} is not valid. Enter a valid integer value. (BMXAA7094E)",
+		19:"The entered value {0} is not valid. Enter a valid integer value. (BMXAA7094E)",
+		8:"The entered value {0} is not valid. Enter a valid decimal value. (BMXAA7095E)",
+		9:"The entered value {0} is not valid. Enter a valid decimal value. (BMXAA7095E)",
+		10:"{0} is not a valid duration. You cannot use both a time separator and a decimal separator. Enter the duration value as HH:MM or as a decimal value. (BMXAA4145E)",
+		11:"{0} is not a number. Enter a numeric value. (BMXAA4141E)",
+		"length":"The value specified {0} exceeds the maximum field length. Enter a value that fits into the length of this attribute. (BMXAA4049E)",
+		"decimaltoolong":"You entered more digits before the decimal point than is permitted in the field. (BMXAA4081E)",
+		"domainvalidation":"{0} is not valid. (BMXAA8284E)"
+	};
+	//TODO - Move some of these cached into WCR?
+	function buildRegexArray()
+	{
+		var DATE_REGEX = new RegExp(/^((\d{4}|\d{2}|\d{1})([\s\.\/\-:]*((1月|2月|3月|4月|5月|6月|7月|8月|9月|10月|11月|12月|1月|2月|3月|4月|5月|6月|7月|8月|9月|10月|11月|12月)))?([\s\.\/\-:]*(3[01]|0[1-9]|[1-2]?[0-9]))?|(\d{4}|\d{2}|\d{1})([\s\.\/\-:]*(1[012]|0[1-9]|[0-9]))?([\s\.\/\-:]*(3[01]|0[1-9]|[1-2]?[0-9]))?|(\d{4}|\d{2}|\d{1})([\s\.\/\-:]*(3[01]|0[1-9]|[1-2]?[0-9]))?([\s\.\/\-:]*((1月|2月|3月|4月|5月|6月|7月|8月|9月|10月|11月|12月|1月|2月|3月|4月|5月|6月|7月|8月|9月|10月|11月|12月)))?)([\.]?)$/i);
+		var DATETIME_REGEX = new RegExp(/^((\d{4}|\d{2}|\d{1})([\s\.\/\-:]*((1月|2月|3月|4月|5月|6月|7月|8月|9月|10月|11月|12月|1月|2月|3月|4月|5月|6月|7月|8月|9月|10月|11月|12月)))?([\s\.\/\-:]*(3[01]|0[1-9]|[1-2]?[0-9]))?|(\d{4}|\d{2}|\d{1})([\s\.\/\-:]*(1[012]|0[1-9]|[0-9]))?([\s\.\/\-:]*(3[01]|0[1-9]|[1-2]?[0-9]))?|(\d{4}|\d{2}|\d{1})([\s\.\/\-:]*(3[01]|0[1-9]|[1-2]?[0-9]))?([\s\.\/\-:]*((1月|2月|3月|4月|5月|6月|7月|8月|9月|10月|11月|12月|1月|2月|3月|4月|5月|6月|7月|8月|9月|10月|11月|12月)))?)([\.]?)\s([2][0-4]|0[0-9]|[01]?[0-9])(:([0-5][0-9]|[0-9])?)?(:([0-5][0-9]|[0-9])?)?(\s上[.]?午[.]?|\s下[.]?午[.]?|\sa[.]?m[.]?|\sp[.]?m[.]?)?$/i);
+		var TIME_REGEX = new RegExp(/^([2][0-4]|0[0-9]|[01]?[0-9])(:([0-5][0-9]|[0-9])?)?(:([0-5][0-9]|[0-9])?)?(\s上[.]?午[.]?|\s下[.]?午[.]?|\sa[.]?m[.]?|\sp[.]?m[.]?)?$/i);
+		var INTEGER_REGEX = new RegExp(/^[-+]?\d+(,?\d{3})*[-+]?$/);
+		var DECIMAL_REGEX = new RegExp(/(^[-+]?\d{1,3}(,?\d{3})*(\.\d*)?[-+]?$)|(^[-+]?\.\d+$)/);
+		var DURATION_REGEX = new RegExp(/(^[-+]?[\d,]*:?[\d,]*[-+]?$)/);
+		return {
+			3:[INTEGER_REGEX,DATE_REGEX],
+			4:[INTEGER_REGEX,DATE_REGEX,DATETIME_REGEX],
+			5:[INTEGER_REGEX,TIME_REGEX,DECIMAL_REGEX],
+			6:[INTEGER_REGEX],
+			7:[INTEGER_REGEX],
+			19:[INTEGER_REGEX],
+			8:[INTEGER_REGEX,DECIMAL_REGEX],
+			9:[INTEGER_REGEX,DECIMAL_REGEX],
+			10:[DECIMAL_REGEX,DURATION_REGEX],
+			11:[INTEGER_REGEX,DECIMAL_REGEX]
+		};
+	}
+	var DATA_TYPE_REGEX = buildRegexArray();
+</script>
+	<script type="text/javascript">
+		function deferred(){
+			//The following is for Web Replay/tbx
+			callWebReplayFrame();
+		replaceAllItems();
+	
+			resetLogoutTimer(true);
+		processLoadMethods();
+		fixSpacers();
+		
+		document.body.style.cursor="";
+	
+		
+		bindEventsArray(document,eventBindObjects,false);
+		hideWait();
+		killAjaxTimeout();
+		working=false;
+		window.setTimeout("showingPopup=false",100);
+		sizeCanvas();
+		}
+		document.body.onload=deferred;
+		window.onload=deferred;
+	</script>
+
+	<script>
+		dialogCount=0;//all dialogs increase the count when _init (on refresh and straight render of page)
+		appHotkeys[80] = new Array(
+			new Array(false, true, "mx54", "click")
+		);
+		appHotkeys[66] = new Array(
+			new Array(false, true, "mx41", "click")
+		);
+		appHotkeys[83] = new Array(
+			new Array(false, true, "mx57", "click")
+		);
+		appHotkeys[67] = new Array(
+			new Array(false, true, "mx51", "click")
+		);
+		appHotkeys[71] = new Array(
+			new Array(false, true, "mx48", "click")
+		);
+		appHotkeys[72] = new Array(
+			new Array(false, true, "mx60", "click")
+		);
+		fixPasswordFields();
+		if(DESIGNMODE)
+		{
+			parent.unLockWait();
+			parent.hideWait();
+		}
+			startLogoutTimer();
+			startTimer();
+
+	</script>
+	
+	<script>
+		if(tpaeConfig.validationOn)
+		{
+			setButtonEnabled(saveButton,false);
+		}
+	</script>
+
+	<div id="storage" style="display:none"></div>
+
+<!-- BEGIN ASYNC ERROR HANDLING TOOLTIP DIALOG -->
+<div id="ascerr_div" aria-hidden="true" style="display:none;">
+	<table border="0" cellpadding="0" cellspacing="0" role="presentation" >
+		<tr>
+			<td>
+				<div id="userinput" class="text"></div>
+				<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+					<tr>
+						<td align="right"><img id="ascerr_errorimg" border="0" src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" alt="" style="margin: 0px 10px 0px 0px"/></td>
+					 	<td id="ascerrmsg" ctype="ttdialog" class="text"></td>
+					</tr>
+				</table>
+			</td>
+			<td valign="top" align="right"><button type="button" id="ascerr_closeimg" tabindex="0" border="0" onclick="stopPopOver()" onkeydown="if(hasKeyCode(event,'KEYCODE_SPACEBAR|KEYCODE_ENTER')){stopPopOver();}" style="border:0px;height:12px;width:12px;background: url(../webclient/skins/tivoli09/images/dialogclose.gif) no-repeat" aria-label="Close Dialog" title="Close Dialog" /></td>
+		</tr>
+		<tr>
+			<td>
+				<iframe src="" id="ascerr_div_iframe" frameborder="0" style="border:0px;display:none" aria-hidden="true" title="External Content"></iframe>
+			</td>
+		</tr>
+	</table>
+	<div id="tt_default_help" class="text">
+		<p id="whelp" style="width: 400px;margin: 10px 0px 0px;">Click "Use My Value" to change the value you entered or "Go Back" to the value that was there before.</p>
+		<p id="ehelp" style="width: 400px;margin: 10px 0px 0px;">Click "Edit My Value" to change the value you entered or "Go Back" to the value that was there before.</p>
+	</div>
+	<div id="tt_defaultbuttons" align="right">
+		<button type="button" id="ync_ybtn" class="text" onclick="processYesNoCancelButton(this, event, 8);">Yes</button>
+		<button type="button" id="ync_nbtn" class="text" onclick="processYesNoCancelButton(this, event, 16);">No</button>
+		<button type="button" id="ync_okbtn" class="text" onclick="processYesNoCancelButton(this, event, 2);">OK</button>
+		<button type="button" id="ync_cbtn" class="text" onclick="processYesNoCancelButton(this, event, 4);">Cancel</button>
+		<button type="button" id="ync_clbtn" class="text" onclick="processYesNoCancelButton(this, event, 1);">Close</button>
+		<button type="button" id="chkbx_btn" class="text" onclick="processIgnoreButton(this, event);">OK</button>
+		<button type="button" id="edit_ebtn" class="text" onclick="processEditButton(this, event);">Edit My Value</button>
+		<button type="button" id="ignore_ibtn" class="text" onclick="processIgnoreButton(this, event);">Use My Value</button>
+		<button type="button" id="revert_rbtn" class="text" onclick="processRevertButton(this, event);">Go Back</button>
+		<span id="tt_custom_buttons"></span>
+	</div>
+</div>
+<!-- End ASYNC ERROR HANDLING TOOLTIP DIALOG -->
+	
+</body>
+<script>
+menus = new MenuController("shared","Next","Previous","Search","Search for {0}.");
+menus["handlerId"] = "startcntr_mainrec_menus";
+
+function processLoadMethods()
+{
+	while(loadMethods.length > 0)
+	{
+		var loadMethod = loadMethods.shift();
+		try
+		{
+			if(DEBUGLEVEL > 1)
+			{
+				console.debug(loadMethod);
+			}
+			eval(loadMethod);
+		}
+		catch(error)
+		{
+			console.error("LoadMethod error["+error.description+"]. Unable to process: ["+loadMethod+"]");
+		}
+	}
+}
+function getQSTB()
+{
+	return getElement("null");
+}
+sizeCanvas();
+	window.onbeforeunload = promptSessionLeave;
+
+		menus.createMenuCache({"goto":{"items":[{"sub":{"items":[{"sub":{"items":[{"eventvalue":"PERSON","id":"MOD10041_HEADER2_PERSON_APP","text":"People"},{"eventvalue":"PERSONGR","id":"MOD10041_HEADER2_PERSONGR_APP","text":"Person Groups"}],"type":1,"id":"MOD10041_HEADER2","openat":"southwest","mxevent":"changeapp"},"id":"1_MOD10041_HEADER","text":"Resources"},{"eventvalue":"BBOARD","id":"1_BBOARD_APP","text":"Bulletin Board"},{"sub":{"items":[{"eventvalue":"RPTOUTPUT","id":"MOD10071_HEADER3_RPTOUTPUT_APP","text":"Report Viewer"}],"type":1,"id":"MOD10071_HEADER3","openat":"southwest","mxevent":"changeapp"},"id":"1_MOD10071_HEADER","text":"Reporting"},{"eventvalue":"WORKVIEW","id":"1_WORKVIEW_APP","text":"Work View"},{"eventvalue":"VIEWDOC","id":"1_VIEWDOC_APP","text":"View Documents"},{"eventvalue":"SRVAD","id":"1_SRVAD_APP","text":"Service Address"}],"type":1,"id":"1","openat":"southwest","mxevent":"changeapp"},"image":"modimg_setup.gif","id":"0_SETUP_MODULE","text":"Administration"},{"sub":{"items":[{"eventvalue":"ASSET","id":"4_ASSET_APP","text":"Assets"},{"eventvalue":"PLUSCTMPLT","id":"4_PLUSCTMPLT_APP","text":"Asset Templates"}],"type":1,"id":"4","openat":"southwest","mxevent":"changeapp"},"image":"modimg_asset.gif","id":"0_ASSET_MODULE","text":"Assets"},{"sub":{"items":[{"eventvalue":"CHANGE","id":"5_CHANGE_APP","text":"Changes"},{"eventvalue":"PMCHGWDOW","id":"5_PMCHGWDOW_APP","text":"Change Window Calendars"},{"eventvalue":"PMCHGBO","id":"5_PMCHGBO_APP","text":"Blackout Periods"},{"eventvalue":"ACTIVITY","id":"5_ACTIVITY_APP","text":"Activities and Tasks"}],"type":1,"id":"5","openat":"southwest","mxevent":"changeapp"},"image":"modimg_change.gif","id":"0_CHANGE_MODULE","text":"Change"},{"sub":{"items":[{"eventvalue":"EXCHANGE","id":"6_EXCHANGE_APP","text":"Exchange Rates"}],"type":1,"id":"6","openat":"southwest","mxevent":"changeapp"},"image":"modimg_financial.gif","id":"0_FINANCIAL_MODULE","text":"Financial"},{"sub":{"items":[{"eventvalue":"CI","id":"7_CI_APP","text":"Configuration Items"},{"eventvalue":"ITDCOLLECT","id":"7_ITDCOLLECT_APP","text":"My Collections"}],"type":1,"id":"7","openat":"southwest","mxevent":"changeapp"},"image":"modimg_configItems.gif","id":"0_CI_MODULE","text":"IT Infrastructure"},{"sub":{"items":[{"eventvalue":"LAUNCH","id":"8_LAUNCH_APP","text":"Launch in Context"}],"type":1,"id":"8","openat":"southwest","mxevent":"changeapp"},"image":"modimg_int.gif","id":"0_INT_MODULE","text":"Integration"},{"sub":{"items":[{"eventvalue":"PLUSPPBOOK","id":"9_PLUSPPBOOK_APP","text":"Price Books (SP)"}],"type":1,"id":"9","openat":"southwest","mxevent":"changeapp"},"image":"modimg_inventor.gif","id":"0_INVENTOR_MODULE","text":"Inventory"},{"sub":{"items":[{"eventvalue":"ITDJOBPLAN","id":"10_ITDJOBPLAN_APP","text":"Job Plans"}],"type":1,"id":"10","openat":"southwest","mxevent":"changeapp"},"image":"modimg_plans.gif","id":"0_PLANS_MODULE","text":"Planning"},{"sub":{"items":[{"eventvalue":"ACTIVITY","id":"11_ACTIVITY_APP","text":"Activities and Tasks"}],"type":1,"id":"11","openat":"southwest","mxevent":"changeapp"},"image":"modimg_release.gif","id":"0_RELEASE_MODULE","text":"Release"},{"sub":{"items":[{"eventvalue":"SRMSEARCH","id":"12_SRMSEARCH_APP","text":"Self Service Global Search"},{"eventvalue":"SURVEYREQ","id":"12_SURVEYREQ_APP","text":"Survey Request"},{"eventvalue":"TLOAMVWAST","id":"12_TLOAMVWAST_APP","text":"View Assets"}],"type":1,"id":"12","openat":"southwest","mxevent":"changeapp"},"image":"modimg_ssdr.gif","id":"0_SSDR_MODULE","text":"Self Service"},{"sub":{"items":[{"eventvalue":"INCIDENT","id":"13_INCIDENT_APP","text":"Incidents"},{"eventvalue":"PROBLEM","id":"13_PROBLEM_APP","text":"Problems"},{"eventvalue":"ACTIVITY","id":"13_ACTIVITY_APP","text":"Activities and Tasks"},{"eventvalue":"SR","id":"13_SR_APP","text":"Service Requests"},{"eventvalue":"TKTEMPLATE","id":"13_TKTEMPLATE_APP","text":"Ticket Templates"},{"eventvalue":"OBJSEARCH","id":"13_OBJSEARCH_APP","text":"Global Search"}],"type":1,"id":"13","openat":"southwest","mxevent":"changeapp"},"image":"modimg_sd.gif","id":"0_SD_MODULE","text":"Service Desk"},{"sub":{"items":[{"eventvalue":"PLUSPRESP","id":"14_PLUSPRESP_APP","text":"Response Plans (SP)"}],"type":1,"id":"14","openat":"southwest","mxevent":"changeapp"},"image":"modimg_sla.gif","id":"0_SLA_MODULE","text":"Service Level"},{"sub":{"items":[{"eventvalue":"SR","id":"15_SR_APP","text":"Service Requests"},{"eventvalue":"TKTEMPLATE","id":"15_TKTEMPLATE_APP","text":"Ticket Templates"},{"eventvalue":"OBJSEARCH","id":"15_OBJSEARCH_APP","text":"Global Search"}],"type":1,"id":"15","openat":"southwest","mxevent":"changeapp"},"image":"modimg_serviceReqestMgr.gif","id":"0_SERVCAT_MODULE","text":"Service Request Catalog"},{"sub":{"items":[{"sub":{"items":[{"eventvalue":"LAUNCH","id":"MOD11130_HEADER17_LAUNCH_APP","text":"Launch in Context"}],"type":1,"id":"MOD11130_HEADER17","openat":"southwest","mxevent":"changeapp"},"id":"16_MOD11130_HEADER","text":"Platform Configuration"}],"type":1,"id":"16","openat":"southwest","mxevent":"changeapp"},"image":"modimg_util.gif","id":"0_UTIL_MODULE","text":"System Configuration"},{"sub":{"items":[{"eventvalue":"ACTIVITY","id":"18_ACTIVITY_APP","text":"Activities and Tasks"}],"type":1,"id":"18","openat":"southwest","mxevent":"changeapp"},"image":"modimg_taskMgmt.gif","id":"0_TM_MODULE","text":"Task Management"},{"sub":{"items":[{"eventvalue":"ACTIVITY","id":"19_ACTIVITY_APP","text":"Activities and Tasks"},{"eventvalue":"SR","id":"19_SR_APP","text":"Service Requests"}],"type":1,"id":"19","openat":"southwest","mxevent":"changeapp"},"image":"modimg_wo.gif","id":"0_WO_MODULE","text":"Work Orders"}],"type":1,"id":"0","openat":"southwest","mxevent":"changeapp"},"profile":{"items":[{"image":"menu_icon_defaultinfo.gif","id":"0_DEFAULT_OPTION","text":"Default Information","mxevent":"DEFAULT"},{"image":"menu_icon_personalinfo.gif","id":"0_PERSONAL_OPTION","text":"Personal Information","mxevent":"PERSONAL"}],"type":6,"id":"0","openat":"southwest"}});
+
+
+</script>
+</html>

@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<server_response csrftoken="hvs0vl0eno51gvmassb0g2ebbi">
+
+
+
+
+
+
+	<component id="mx341_holder"><![CDATA[<script>
+		var el = document.getElementById("mx341");
+		if(el)
+		{
+			el.style.display="";
+		}
+	</script>]]></component>
+<component vis="true" id="mx322_holder" compid="mx322"><![CDATA[<span ctype="label"  id="mx322"   tabindex="0"     targetid="mx322"  mxevent="click"  class="text tht   anchor" style="display:block;padding-left:2px;padding-top:2px;;cursor:pointer;;;;" title="Filter">Filter</span>]]></component>
+<component vis="true" id="mx326_holder" compid="mx326"><![CDATA[<a  href="javascript: void(0);" ctype="toggleimage" ev="true" tabindex="0"  compid="mx326"   title="Clear Filter Fields"><img id="mx326"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   " src="../webclient/skins-20140301-2351/tivoli09/images/qf_clear.gif" source="qf_clear.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Clear Filter Fields"  /></a>
+]]></component>
+<component vis="true" id="mx332_holder" compid="mx332"><![CDATA[<a  href="javascript: void(0);" ctype="toggleimage" ev="true" tabindex="0"  compid="mx332"   title="Next Row     [CTRL+Down Arrow]"><img id="mx332"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti   " src="../webclient/skins-20140301-2351/tivoli09/images/tablebtn_nextdown_on.gif" source="tablebtn_nextdown_on.gif" imgtype="" ev="true" align="top" style="display:block;margin:0px;"  alt="Next Row     [CTRL+Down Arrow]"  /></a>
+]]></component>
+<component vis="true" id="mx335_holder" compid="mx335"><![CDATA[<label ctype="label"  id="mx335"    noclick="1"  targetid="mx335"    class="text tht  " style="display:block;padding-left:2px;padding-top:2px;;;;;" title="1 - 2 of 2">1 - 2 of 2</label>]]></component>
+<component vis="true" id="mx337_holder" compid="mx337"><![CDATA[	<div id="mx337" name="mx337" class="text ts  ts  "  >&nbsp;</div>
+]]></component>
+<component vis="true" id="mx338_holder" compid="mx338"><![CDATA[<a ctype="label"  id="mx338"  href="https://w3-01.ibm.com/itd/igaism/ui/1394683540207?_tbldnld=results_showlist&amp;uisessionid=4235&amp;csrftoken=hvs0vl0eno51gvmassb0g2ebbi" onmouseover="return noStatus();" target="_blank"  noclick="1"  targetid="mx338"    class="text tht  " style="display:block;;;;;" title="Download"><img id='mx338_image' src='../webclient/skins-20140301-2351/tivoli09/images/tablebtn_download.gif'  border='0' alt="Download" style='vertical-align:top;margin:0px;margin-left:3px;margin-right:3px;'/><span>Download</span></a>]]></component>
+<component vis="true" id="mx364_holder" compid="mx364" holder="mx364_bodyholder"><![CDATA[
+				<div id="mx364_bodyholder1"  style="width:100%;">
+					<table role="grid" id="mx364" rownum="0" aria-labelledby="mx319" rowsperpage="20" displayrows="2"  valign="top" summary="Incidents"  style="border-collapse:separate;" class="tbod  ">
+						<tr>
+							<th id="results_showlist_tablebody_rowholder" colspan="200" style='display:none'></th>
+						</tr>
+	<tr aria-invalid="true" role="row" id="mx397"    class="ttitr   treven" style="display:;">
+	<th id="errtitle"></th>	<th role="columnheader" control="true" id="mx416"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand"   ><table role="presentation" id="mx416_inner" style="display:none;; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx415_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx414"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx420_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap" width="100%" id="mx419_0"  align="left" class="tsrsa " valign="top" style="vertical-align:top;display:none;"><div aria-live="polite" id="mx418_holder" class="bc"><a  href="javascript: void(0);" ctype="toggleimage" ev="false" tabindex="0"  compid="mx418"   title="Select All Records"><img id="mx418"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti toggleselectcheckbox tstcb  " src="../webclient/skins-20140301-2351/tivoli09/images/table_cb_unchecked.gif" source="table_cb_unchecked" imgtype=".gif" ev="false" align="top" style="display:inline;margin:0px;margin-top:2px;" align="absbottom" alt="Select All Records"  /></a>
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></th>
+		<th role="columnheader" control="true" id="mx424"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand"   ><table role="presentation" id="mx424_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx423_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx422"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx431_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx430_0"     valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx426_holder" class="bc"><span ctype="sortlabel"  id="mx426"   tabindex="0"    ev="1" targetid="mx426"  mxevent="click"  class="text hcns   anchor" style="padding:0px;padding-left:1px;margin:0px;;cursor:pointer;;;;" title="Incident">Incident</span></div><div aria-live="polite" id="mx427_holder" class="bc"><img id="mx427"  tabindex="-1" border="0" src="../webclient/skins-20140301-2351/tivoli09/images/col_sort_asc.gif" aria-live="polite" alt="Sort Ascending" width="11" height="11" align="absmiddle" style="margin:0px;"  />
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></th>
+		<th role="columnheader" control="true" id="mx435"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand"   ><table role="presentation" id="mx435_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx434_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx433"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx442_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx441_0"     valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx437_holder" class="bc"><span ctype="sortlabel"  id="mx437"   tabindex="0"    ev="2" targetid="mx437"  mxevent="click"  class="text hcns   anchor" style="padding:0px;padding-left:1px;margin:0px;;cursor:pointer;;;;" title="Global Issue">Global Issue?</span></div><div aria-live="polite" id="mx438_holder" class="bc"><img id="mx438"  tabindex="-1" border="0" src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" aria-live="polite" alt="Default Sort" width="0" height="11" align="absmiddle" style="margin:0px;"  />
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></th>
+		<th role="columnheader" control="true" id="mx446"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand"   ><table role="presentation" id="mx446_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx445_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx444"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx453_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx452_0"     valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx448_holder" class="bc"><label ctype="sortlabel"  id="mx448"    noclick="1"  targetid="mx448"    class="text ct  " style="padding:0px;padding-left:1px;margin:0px;;;;;" title="Summary">Summary</label></div><div aria-live="polite" id="mx449_holder" class="bc"><img id="mx449"  tabindex="-1" border="0" src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" aria-live="polite" alt="Default Sort" width="0" height="11" align="absmiddle" style="margin:0px;"  />
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></th>
+		<th role="columnheader" control="true" id="mx457"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand"   ><br/><table role="presentation" id="mx457_inner" style="display:none;; margin-right:3px " align="right"  >
+			<tr>
+					<td    nowrap="nowrap"  id="mx456_0"     valign="top" style="vertical-align:top;display:none;"><table role="presentation" control="true" id="mx455"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top"></table>
+</td>
+		
+				</tr>
+			</table></th>
+		<th role="columnheader" control="true" id="mx468"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand"   ><table role="presentation" id="mx468_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx467_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx466"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx475_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx474_0"     valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx470_holder" class="bc"><span ctype="sortlabel"  id="mx470"   tabindex="0"    ev="5" targetid="mx470"  mxevent="click"  class="text hcns   anchor" style="padding:0px;padding-left:1px;margin:0px;;cursor:pointer;;;;" title="Status">Status</span></div><div aria-live="polite" id="mx471_holder" class="bc"><img id="mx471"  tabindex="-1" border="0" src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" aria-live="polite" alt="Default Sort" width="0" height="11" align="absmiddle" style="margin:0px;"  />
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></th>
+		<th role="columnheader" control="true" id="mx479"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand"   ><table role="presentation" id="mx479_inner" style="display:inline; margin-right:3px " align="right"  >
+			<tr>
+					<td    nowrap="nowrap"  id="mx478_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx477"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx486_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx485_0"     valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx481_holder" class="bc"><span ctype="sortlabel"  id="mx481"   tabindex="0"    ev="6" targetid="mx481"  mxevent="click"  class="text hcns   anchor" style="padding:0px;padding-left:1px;margin:0px;;cursor:pointer;;;;" title="Internal Priority">Internal Priority</span></div><div aria-live="polite" id="mx482_holder" class="bc"><img id="mx482"  tabindex="-1" border="0" src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" aria-live="polite" alt="Default Sort" width="0" height="11" align="absmiddle" style="margin:0px;"  />
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></th>
+		<th role="columnheader" control="true" id="mx490"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand"   ><table role="presentation" id="mx490_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx489_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx488"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx497_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx496_0"     valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx492_holder" class="bc"><span ctype="sortlabel"  id="mx492"   tabindex="0"    ev="7" targetid="mx492"  mxevent="click"  class="text hcns   anchor" style="padding:0px;padding-left:1px;margin:0px;;cursor:pointer;;;;" title="Target Contact">Target Contact</span></div><div aria-live="polite" id="mx493_holder" class="bc"><img id="mx493"  tabindex="-1" border="0" src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" aria-live="polite" alt="Default Sort" width="0" height="11" align="absmiddle" style="margin:0px;"  />
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></th>
+		<th role="columnheader" control="true" id="mx501"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand"   ><table role="presentation" id="mx501_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx500_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx499"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx508_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx507_0"     valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx503_holder" class="bc"><span ctype="sortlabel"  id="mx503"   tabindex="0"    ev="8" targetid="mx503"  mxevent="click"  class="text hcns   anchor" style="padding:0px;padding-left:1px;margin:0px;;cursor:pointer;;;;" title="Target Finish">Target Finish</span></div><div aria-live="polite" id="mx504_holder" class="bc"><img id="mx504"  tabindex="-1" border="0" src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" aria-live="polite" alt="Default Sort" width="0" height="11" align="absmiddle" style="margin:0px;"  />
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></th>
+		<th role="columnheader" control="true" id="mx512"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand"   ><table role="presentation" id="mx512_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx511_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx510"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx519_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx518_0"     valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx514_holder" class="bc"><label ctype="sortlabel"  id="mx514"    noclick="1"  targetid="mx514"    class="text ct  " style="padding:0px;padding-left:1px;margin:0px;;;;;" title="Affected Person Name">Affected Person Name</label></div><div aria-live="polite" id="mx515_holder" class="bc"><img id="mx515"  tabindex="-1" border="0" src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" aria-live="polite" alt="Default Sort" width="0" height="11" align="absmiddle" style="margin:0px;"  />
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></th>
+		<th role="columnheader" control="true" id="mx523"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand"   ><table role="presentation" id="mx523_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx522_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx521"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx530_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx529_0"     valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx525_holder" class="bc"><label ctype="sortlabel"  id="mx525"    noclick="1"  targetid="mx525"    class="text ct  " style="padding:0px;padding-left:1px;margin:0px;;;;;" title="Owner Name">Owner Name</label></div><div aria-live="polite" id="mx526_holder" class="bc"><img id="mx526"  tabindex="-1" border="0" src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" aria-live="polite" alt="Default Sort" width="0" height="11" align="absmiddle" style="margin:0px;"  />
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></th>
+		<th role="columnheader" control="true" id="mx534"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand"   ><table role="presentation" id="mx534_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx533_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx532"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx541_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx540_0"     valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx536_holder" class="bc"><span ctype="sortlabel"  id="mx536"   tabindex="0"    ev="11" targetid="mx536"  mxevent="click"  class="text hcns   anchor" style="padding:0px;padding-left:1px;margin:0px;;cursor:pointer;;;;" title="Owner Group">Owner Group</span></div><div aria-live="polite" id="mx537_holder" class="bc"><img id="mx537"  tabindex="-1" border="0" src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" aria-live="polite" alt="Default Sort" width="0" height="11" align="absmiddle" style="margin:0px;"  />
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></th>
+		<th role="columnheader" control="true" id="mx545"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand"   ><table role="presentation" id="mx545_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx544_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx543"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx552_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx551_0"     valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx547_holder" class="bc"><span ctype="sortlabel"  id="mx547"   tabindex="0"    ev="12" targetid="mx547"  mxevent="click"  class="text hcns   anchor" style="padding:0px;padding-left:1px;margin:0px;;cursor:pointer;;;;" title="Locked">Locked?</span></div><div aria-live="polite" id="mx548_holder" class="bc"><img id="mx548"  tabindex="-1" border="0" src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" aria-live="polite" alt="Default Sort" width="0" height="11" align="absmiddle" style="margin:0px;"  />
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></th>
+		<th role="columnheader" control="true" id="mx556"    onclick="" style="; " currentrow="false" class="tc    cursor_hand"   ><table role="presentation" id="mx556_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx555_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx554"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx560_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx559_0"     valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx558_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"    class="ct " align="absmiddle" width='0px' height='26px'  id="mx558" title=""/></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></th>
+	
+	</tr>
+
+	<tr aria-invalid="true" role="row" id="mx400"  onkeyup="if(tableRowEnterKeyFlag==1 && event.keyCode==KEYCODE_ENTER){sendEvent('filterrows','mx400','');cancelEvent(event);}" onkeydown="if(event.keyCode == KEYCODE_ENTER) tableRowEnterKeyFlag=1; else tableRowEnterKeyFlag=0;" class="tfr   trodd" style="display:;">
+	<td headers="errtitle"></td>	<td role="gridcell" control="true" id="mx564"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand" headers="mx416"  ><table role="presentation" id="mx564_inner" style="display:none;; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx563_0"     valign="top" style="vertical-align:top;"></td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx568"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand" headers="mx424"  ><table role="presentation" id="mx568_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx567_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx566"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx576_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx575_0"  align="right"   valign="middle" style="vertical-align:middle;"></td>
+				<td    nowrap="nowrap"  id="mx575_1"     valign="middle" style="vertical-align:middle;"><div aria-live="polite" id="mx572_holder" class="bc"><input   role="textbox"  id="mx572" class="fld text tablefilterfield  tt ib queryField"     ctype="textbox"   li="mx573"      style=";width:75.0px;"  ontr='true'       type="text" title="Incident filter" value="" ov="" fldInfo='{&quot;query&quot;:true,&quot;eventpriority&quot;:1}'/></div><div aria-live="polite" id="mx573_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="mx572"    align="absmiddle" width='0px' height='26px'  id="mx573" title=""/></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx580"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand" headers="mx435"  ><table role="presentation" id="mx580_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx579_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx578"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx588_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx587_0"  align="right"   valign="middle" style="vertical-align:middle;"></td>
+				<td    nowrap="nowrap"  id="mx587_1"     valign="middle" style="vertical-align:middle;"><div aria-live="polite" id="mx584_holder" class="bc"><input   role="textbox"  id="mx584" class="fld text tablefilterfield  tt ib queryField"     ctype="textbox"   li="mx585"      style=";width:40px;"  ontr='true'       type="text" title="Global Issue filter" value="" ov="" fldInfo='{&quot;query&quot;:true,&quot;lookup&quot;:&quot;yornlookuplist&quot;,&quot;eventpriority&quot;:1}'/></div><div aria-live="polite" id="mx585_holder" class="bc"><img sf="1"   ctype="image" alt="Select Value"  src="../webclient/skins-20140301-2351/tivoli09/images/img_lookup.gif" source="img_lookup" imgtype=".gif" style="cursor:default;display:inline;margin:0px;margin-top:2px;margin-left:2px;" border="0"  lc="mx584" aria-haspopup="true"   align="absmiddle"   ev="yornlookuplist" id="mx585" tabindex="-1" title="Select Value"/></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx592"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand" headers="mx446"  ><table role="presentation" id="mx592_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx591_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx590"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx600_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx599_0"  align="right"   valign="middle" style="vertical-align:middle;"></td>
+				<td    nowrap="nowrap"  id="mx599_1"     valign="middle" style="vertical-align:middle;"><div aria-live="polite" id="mx596_holder" class="bc"><input   role="textbox"  id="mx596" class="fld text tablefilterfield  tt ib queryField"     ctype="textbox"   li="mx597"      style=";width:250px;"  ontr='true'       type="text" title="Summary filter" value="" ov="" fldInfo='{&quot;query&quot;:true}'/></div><div aria-live="polite" id="mx597_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="mx596"    align="absmiddle" width='0px' height='26px'  id="mx597" title=""/></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx604"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand" headers="mx457"  ><br/><table role="presentation" id="mx604_inner" style="display:none;; margin-right:3px " align="right"  >
+			<tr>
+					<td    nowrap="nowrap"  id="mx603_0"     valign="top" style="vertical-align:top;display:none;"><table role="presentation" control="true" id="mx602"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx612_0"    style="vertical-align:top;display:none;">
+				<td    nowrap="nowrap"  id="mx611_0"  align="right"   valign="middle" style="vertical-align:middle;display:none;"></td>
+				<td    nowrap="nowrap"  id="mx611_1"     valign="middle" style="vertical-align:middle;display:none;"><div aria-live="polite" id="mx608_holder" class="bc" style="display:none"><input   role="textbox"  id="mx608" class="fld text tablefilterfield  tt ib queryField"     ctype="textbox"  dir="ltr" li="mx609"      style="padding-right:2px;text-align: right;;width:70.0px;"  ontr='true'       type="text" title="Priority filter" value="" ov="" fldInfo='{&quot;query&quot;:true}'/></div><div aria-live="polite" id="mx609_holder" class="bc" style="display:none"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="mx608"    align="absmiddle" width='0px' height='26px'  id="mx609" title=""/></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx616"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand" headers="mx468"  ><table role="presentation" id="mx616_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx615_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx614"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx624_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx623_0"  align="right"   valign="middle" style="vertical-align:middle;"></td>
+				<td    nowrap="nowrap"  id="mx623_1"     valign="middle" style="vertical-align:middle;"><div aria-live="polite" id="mx620_holder" class="bc"><input   role="textbox"  id="mx620" class="fld text tablefilterfield  tt ib queryField"     ctype="textbox"   li="mx621"      style=";width:75.0px;"  ontr='true'       type="text" title="Status filter： =ASSIGNED,=SLAHOLD" value="=ASSIGNED,=SLAHOLD" ov="=ASSIGNED,=SLAHOLD" fldInfo='{&quot;query&quot;:true,&quot;lookup&quot;:&quot;valuelist&quot;,&quot;eventpriority&quot;:2}'/></div><div aria-live="polite" id="mx621_holder" class="bc"><img sf="1"   ctype="image" alt="Select Value"  src="../webclient/skins-20140301-2351/tivoli09/images/img_lookup.gif" source="img_lookup" imgtype=".gif" style="cursor:default;display:inline;margin:0px;margin-top:2px;margin-left:2px;" border="0"  lc="mx620" aria-haspopup="true"   align="absmiddle"   ev="valuelist" id="mx621" tabindex="-1" title="Select Value"/></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx628"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand" headers="mx479"  ><table role="presentation" id="mx628_inner" style="display:inline; margin-right:3px " align="right"  >
+			<tr>
+					<td    nowrap="nowrap"  id="mx627_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx626"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx636_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx635_0"  align="right"   valign="middle" style="vertical-align:middle;"></td>
+				<td    nowrap="nowrap"  id="mx635_1"     valign="middle" style="vertical-align:middle;"><div aria-live="polite" id="mx632_holder" class="bc"><input   role="textbox"  id="mx632" class="fld text tablefilterfield  tt ib queryField"     ctype="textbox"  dir="ltr" li="mx633"      style="padding-right:2px;text-align: right;;width:70.0px;"  ontr='true'       type="text" title="Internal Priority filter" value="" ov="" fldInfo='{&quot;query&quot;:true}'/></div><div aria-live="polite" id="mx633_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="mx632"    align="absmiddle" width='0px' height='26px'  id="mx633" title=""/></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx640"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand" headers="mx490"  ><table role="presentation" id="mx640_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx639_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx638"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx648_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx647_0"  align="right"   valign="middle" style="vertical-align:middle;"></td>
+				<td    nowrap="nowrap"  id="mx647_1"     valign="middle" style="vertical-align:middle;"><div aria-live="polite" id="mx644_holder" class="bc"><script>
+		dojo.require('layers.mbs.calendar');
+		dojo.require('dojo.date.locale');
+			dojo.require('ibm.tivoli.mbs.dijit.DateTimeCalendar');
+	</script><input   role="textbox"  id="mx644" class="fld text tablefilterfield  tt ib queryField"     ctype="textbox"   li="mx645"      style=";width:70px;" df="1" ontr='true'  PopupType="ibm.tivoli.mbs.dijit.DateTimeCalendar" constraints="{datePattern:'yy-M-d', timePattern:'H:m:s',locale:'zh-cn',visibleRange: 'T03:30:00'}" datePackage="" lang="zh-cn" lng="en" dojoValue='1394683540232'     type="text" title="Target Contact filter" value="" fldInfo='{&quot;query&quot;:true,&quot;lookup&quot;:&quot;datelookup&quot;}'/>	<script type="text/javascript">
+		dojo.require("ibm.tivoli.mbs.html");
+		formatCalendar('mx644',ibm.tivoli.mbs.html.decodeEntities(''));
+	</script>
+</div><div aria-live="polite" id="mx645_holder" class="bc"><img sf="1"   ctype="image" alt="Select Date and Time"  src="../webclient/skins-20140301-2351/tivoli09/images/img_date_time.gif" source="img_date_time" imgtype=".gif" style="cursor:default;display:inline;margin:0px;margin-top:2px;margin-left:2px;" border="0"  lc="mx644" aria-haspopup="true"   align="absmiddle"   ev="datelookup" mxejse="dateLookupHdlr" id="mx645" tabindex="-1" title="Select Date and Time"/></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx652"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand" headers="mx501"  ><table role="presentation" id="mx652_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx651_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx650"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx660_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx659_0"  align="right"   valign="middle" style="vertical-align:middle;"></td>
+				<td    nowrap="nowrap"  id="mx659_1"     valign="middle" style="vertical-align:middle;"><div aria-live="polite" id="mx656_holder" class="bc"><script>
+		dojo.require('layers.mbs.calendar');
+		dojo.require('dojo.date.locale');
+			dojo.require('ibm.tivoli.mbs.dijit.DateTimeCalendar');
+	</script><input   role="textbox"  id="mx656" class="fld text tablefilterfield  tt ib queryField"     ctype="textbox"   li="mx657"      style=";width:70px;" df="1" ontr='true'  PopupType="ibm.tivoli.mbs.dijit.DateTimeCalendar" constraints="{datePattern:'yy-M-d', timePattern:'H:m:s',locale:'zh-cn',visibleRange: 'T03:30:00'}" datePackage="" lang="zh-cn" lng="en" dojoValue='1391790923833'     type="text" title="Target Finish filter" value="" fldInfo='{&quot;query&quot;:true,&quot;lookup&quot;:&quot;datelookup&quot;,&quot;eventpriority&quot;:1}'/>	<script type="text/javascript">
+		dojo.require("ibm.tivoli.mbs.html");
+		formatCalendar('mx656',ibm.tivoli.mbs.html.decodeEntities(''));
+	</script>
+</div><div aria-live="polite" id="mx657_holder" class="bc"><img sf="1"   ctype="image" alt="Select Date and Time"  src="../webclient/skins-20140301-2351/tivoli09/images/img_date_time.gif" source="img_date_time" imgtype=".gif" style="cursor:default;display:inline;margin:0px;margin-top:2px;margin-left:2px;" border="0"  lc="mx656" aria-haspopup="true"   align="absmiddle"   ev="datelookup" mxejse="dateLookupHdlr" id="mx657" tabindex="-1" title="Select Date and Time"/></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx664"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand" headers="mx512"  ><table role="presentation" id="mx664_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx663_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx662"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx672_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx671_0"  align="right"   valign="middle" style="vertical-align:middle;"></td>
+				<td    nowrap="nowrap"  id="mx671_1"     valign="middle" style="vertical-align:middle;"><div aria-live="polite" id="mx668_holder" class="bc"><input   role="textbox"  id="mx668" class="fld text tablefilterfield  tt ib queryField"     ctype="textbox"   li="mx669"      style=";width:140px;"  ontr='true'       type="text" title="Affected Person Name filter" value="" ov="" fldInfo='{&quot;query&quot;:true,&quot;eventpriority&quot;:1}'/></div><div aria-live="polite" id="mx669_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="mx668"    align="absmiddle" width='0px' height='26px'  id="mx669" title=""/></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx676"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand" headers="mx523"  ><table role="presentation" id="mx676_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx675_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx674"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx684_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx683_0"  align="right"   valign="middle" style="vertical-align:middle;"></td>
+				<td    nowrap="nowrap"  id="mx683_1"     valign="middle" style="vertical-align:middle;"><div aria-live="polite" id="mx680_holder" class="bc"><input   role="textbox"  id="mx680" class="fld text tablefilterfield  tt ib queryField"     ctype="textbox"   li="mx681"      style=";width:140px;"  ontr='true'       type="text" title="Owner Name filter： xiong chang wu" value="xiong chang wu" ov="xiong chang wu" fldInfo='{&quot;query&quot;:true,&quot;eventpriority&quot;:1}'/></div><div aria-live="polite" id="mx681_holder" class="bc"><img sf="1" aria-hidden="true" active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" source="blank" imgtype=".gif" style="display:inline;margin:0px;" border="0"  lc="mx680"    align="absmiddle" width='0px' height='26px'  id="mx681" title=""/></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx688"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand" headers="mx534"  ><table role="presentation" id="mx688_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx687_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx686"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx696_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx695_0"  align="right"   valign="middle" style="vertical-align:middle;"></td>
+				<td    nowrap="nowrap"  id="mx695_1"     valign="middle" style="vertical-align:middle;"><div aria-live="polite" id="mx692_holder" class="bc"><input   role="textbox"  id="mx692" class="fld text tablefilterfield  tt ib queryField"     ctype="textbox"   li="mx693"      style=";width:75.0px;"  ontr='true'       type="text" title="Owner Group filter" value="" ov="" fldInfo='{&quot;query&quot;:true,&quot;lookup&quot;:&quot;persongroup&quot;,&quot;eventpriority&quot;:2}'/></div><div aria-live="polite" id="mx693_holder" class="bc"><img sf="1"   ctype="image" alt="Detail Menu"  src="../webclient/skins-20140301-2351/tivoli09/images/img_menu.gif" source="img_menu" imgtype=".gif" style="cursor:default;display:inline;margin:0px;margin-top:2px;margin-left:2px;" border="0"  lc="mx692" aria-haspopup="true"   align="absmiddle"    id="mx693" tabindex="-1" title="Detail Menu"/></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx700"    onclick="" style=";padding-right:5px; " currentrow="false" class="tc    cursor_hand" headers="mx545"  ><table role="presentation" id="mx700_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx699_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx698"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx708_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx707_0"  align="right"   valign="middle" style="vertical-align:middle;"></td>
+				<td    nowrap="nowrap"  id="mx707_1"     valign="middle" style="vertical-align:middle;"><div aria-live="polite" id="mx704_holder" class="bc"><input   role="textbox"  id="mx704" class="fld text tablefilterfield  tt ib queryField"     ctype="textbox"   li="mx705"      style=";width:35px;"  ontr='true'       type="text" title="Locked filter" value="" ov="" fldInfo='{&quot;query&quot;:true,&quot;lookup&quot;:&quot;yornlookuplist&quot;}'/></div><div aria-live="polite" id="mx705_holder" class="bc"><img sf="1"   ctype="image" alt="Select Value"  src="../webclient/skins-20140301-2351/tivoli09/images/img_lookup.gif" source="img_lookup" imgtype=".gif" style="cursor:default;display:inline;margin:0px;margin-top:2px;margin-left:2px;" border="0"  lc="mx704" aria-haspopup="true"   align="absmiddle"   ev="yornlookuplist" id="mx705" tabindex="-1" title="Select Value"/></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx712"    onclick="" style="; " currentrow="false" class="tc    cursor_hand" headers="mx556"  ><table role="presentation" id="mx712_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx711_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx710"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx716_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx715_0"     valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx714_holder" class="bc"><img sf="1"  active="0" ctype="image" alt=""  src="../webclient/skins-20140301-2351/tivoli09/images/blank.gif" source="blank.gif" imgtype="" style="cursor:default;display:@display;margin:0px;margin-top:2px;margin-left:2px;" border="0"          id="mx714" title=""/></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+	
+	</tr>
+
+	<tr aria-invalid="true" role="row" id="mx403"    class="nrm   treven" aria-hidden="true"  style="display:none;">
+	<td headers="errtitle"></td>
+	</tr>
+
+	<tr aria-invalid="true" role="row" id="mx406[R:0]"  current="true"   class="tablerow   tcr trodd" style="display:;">
+	<td headers="errtitle"><img id='mx406[R:0]_er_img' src='../webclient/skins-20140301-2351/tivoli09/images/blank.gif' style='display:none' class='tablerow_blank_icon' title="" alt=""/></td>	<td role="gridcell" control="true" id="mx728[R:0]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx728[R:0]')" style=";padding-right:5px; width:;" currentrow="true" class="tc hlsel   cursor_hand" headers="mx416"  ><table role="presentation" id="mx728[R:0]_inner" style="display:none;; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx727[R:0]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx726[R:0]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx732[R:0]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx731[R:0]_0"  align="left" class="tsrsa " valign="top" style="vertical-align:top;display:none;"><div aria-live="polite" id="mx730[R:0]_holder" class="bc"><a  href="javascript: void(0);" ctype="toggleimage" ev="false" tabindex="0"  compid="mx730[R:0]"  aria-role="checkbox" aria-checked="false" title="Select Record unchecked"><img id="mx730[R:0]"  fldInfo='{&quot;eventpriority&quot;:2}' aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti toggleselectcheckbox  " src="../webclient/skins-20140301-2351/tivoli09/images/table_cb_unchecked.gif" source="table_cb_unchecked" imgtype=".gif" ev="false" align="top" style="display:inline;margin:0px;margin-top:2px;" align="absbottom" alt="Select Record unchecked"  /></a>
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx736[R:0]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx736[R:0]')" style=";padding-right:5px; width:;" currentrow="true" class="tc hl   cursor_hand" headers="mx424"  ><table role="presentation" id="mx736[R:0]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx735[R:0]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx734[R:0]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx740[R:0]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx739[R:0]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx738[R:0]_holder" class="bc"><span ctype="label"  id="mx738[R:0]"   tabindex="0"     targetid="mx738[R:0]"  mxevent="click"  class="text txtbold text label  label   anchor" style="padding:0px;padding-left:1px;margin:0px;;cursor:pointer;;;;" title="">IN4729427</span><img id='mx738[R:0]_tt' src='../webclient/skins-20140301-2351/tivoli09/images/btn10_moreInfo.png' role='button' aria-label='Incident More information' class='tooltipMarker' compid='mx738[R:0]' tabindex='-1'  hovertooltip='ticket_recordhover_1'  tttype='SYNC'  ctype='ttimage'/></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx744[R:0]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx744[R:0]')" style=";padding-right:5px; width:40;" currentrow="true" class="tc cd   cursor_hand" headers="mx435"  ><table role="presentation" id="mx744[R:0]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx743[R:0]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx742[R:0]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx751[R:0]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx750[R:0]_0"  align="right"   valign="middle" style="vertical-align:middle;"></td>
+				<td    nowrap="nowrap"  id="mx750[R:0]_1"  align="left"   valign="middle" style="vertical-align:middle;"><div aria-live="polite" id="mx748[R:0]_holder" class="bc">
+	<table role="presentation" id="mx748[R:0]_tb" border="0" cellspacing="0" cellpadding="0" style="margin:0px;vertical-align:middle;border:0px;display:inline-table;;" class="_b">
+		<tbody>
+			<tr>
+				<td valign="middle"><a role="checkbox"  aria-checked="false" href="javascript: void(0)" id="mx748[R:0]" ctype="checkbox" class="cb09"  title="Global Issue： unchecked" tabindex="-1" style="cursor:default" imgid="mx748[R:0]_img" aria-readonly="true" mxejse="cbHdlr" fldInfo='{&quot;length&quot;:&quot;&quot;,&quot;inttype&quot;:&quot;&quot;,&quot;eventpriority&quot;:2}'><img border="0" alt="Global Issue： unchecked" tabindex="-1" align="texttop" id="mx748[R:0]_img"  class="checkbox  " src="../webclient/skins-20140301-2351/tivoli09/images/table_cb_uncheckedreadonly.gif"  imgtype="gif" imgname="table_cb_" checked="unchecked" style="cursor:default" readonly="true" onfocus="this.parentNode.focus()"/></a></td>
+			</tr>
+		</tbody>
+	</table>
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx755[R:0]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx755[R:0]')" style=";padding-right:5px; width:250;" currentrow="true" class="tc cd   cursor_hand" headers="mx446"  ><table role="presentation" id="mx755[R:0]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx754[R:0]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx753[R:0]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx759[R:0]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx758[R:0]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx757[R:0]_holder" class="bc"><div ctype="label"  id="mx757[R:0]"    noclick="1"  targetid="mx757[R:0]"    class="text txtbold text label  label  " style="padding:0px;padding-left:1px;padding-top:5px;padding-bottom:5px;;;;;" title="NOTES 8.5.1-Error-user called in with the ticket number&quot;SR8965667&quot;,saying he is unable to access not">NOTES 8.5.1-Error-user called in with<br/>the ticket number&quot;SR8965667&quot;,saying he<br/>is unable to access not</div></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx763[R:0]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx763[R:0]')" style=";padding-right:5px; width:;" currentrow="true" class="tc cd   cursor_hand" headers="mx457"  ><br/><table role="presentation" id="mx763[R:0]_inner" style="display:none;; margin-right:3px " align="right"  >
+			<tr>
+					<td    nowrap="nowrap"  id="mx762[R:0]_0"     valign="top" style="vertical-align:top;display:none;"><table role="presentation" control="true" id="mx761[R:0]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top"></table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx771[R:0]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx771[R:0]')" style=";padding-right:5px; width:;" currentrow="true" class="tc cd   cursor_hand" headers="mx468"  ><table role="presentation" id="mx771[R:0]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx770[R:0]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx769[R:0]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx775[R:0]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx774[R:0]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx773[R:0]_holder" class="bc"><label ctype="label"  id="mx773[R:0]"    noclick="1"  targetid="mx773[R:0]"    class="text txtbold text label  label  " style="padding:0px;padding-left:1px;margin:0px;;;;;" title="SLAHOLD">SLAHOLD</label></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx779[R:0]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx779[R:0]')" style=";padding-right:5px; width:;" currentrow="true" class="tc cd   cursor_hand" headers="mx479"  ><table role="presentation" id="mx779[R:0]_inner" style="display:inline; margin-right:3px " align="right"  >
+			<tr>
+					<td    nowrap="nowrap"  id="mx778[R:0]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx777[R:0]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx783[R:0]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx782[R:0]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx781[R:0]_holder" class="bc"><label ctype="label"  id="mx781[R:0]"    noclick="1"  targetid="mx781[R:0]"    class="text txtbold text label  label  " style="padding:0px;padding-left:1px;margin:0px;;;;;" title="4">4</label></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx787[R:0]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx787[R:0]')" style=";padding-right:5px; width:70;" currentrow="true" class="tc cd   cursor_hand" headers="mx490"  ><table role="presentation" id="mx787[R:0]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx786[R:0]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx785[R:0]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx791[R:0]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx790[R:0]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx789[R:0]_holder" class="bc">		&nbsp;
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx795[R:0]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx795[R:0]')" style=";padding-right:5px; width:70;" currentrow="true" class="tc cd   cursor_hand" headers="mx501"  ><table role="presentation" id="mx795[R:0]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx794[R:0]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx793[R:0]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx799[R:0]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx798[R:0]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx797[R:0]_holder" class="bc"><label ctype="label"  id="mx797[R:0]"    noclick="1"  targetid="mx797[R:0]"    class="text txtbold text label  label  " style="padding:0px;padding-left:1px;margin:0px;;;;;" title="14-2-8 0:35:23">14-2-8 0:35:23</label></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx803[R:0]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx803[R:0]')" style=";padding-right:5px; width:140;" currentrow="true" class="tc cd   cursor_hand" headers="mx512"  ><table role="presentation" id="mx803[R:0]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx802[R:0]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx801[R:0]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx807[R:0]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx806[R:0]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx805[R:0]_holder" class="bc"><label ctype="label"  id="mx805[R:0]"    noclick="1"  targetid="mx805[R:0]"    class="text txtbold text label  label  " style="padding:0px;padding-left:1px;margin:0px;;;;;" title="RONALD A TIMMERBERG">RONALD A TIMMERBERG</label></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx811[R:0]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx811[R:0]')" style=";padding-right:5px; width:140;" currentrow="true" class="tc cd   cursor_hand" headers="mx523"  ><table role="presentation" id="mx811[R:0]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx810[R:0]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx809[R:0]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx815[R:0]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx814[R:0]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx813[R:0]_holder" class="bc"><label ctype="label"  id="mx813[R:0]"    noclick="1"  targetid="mx813[R:0]"    class="text txtbold text label  label  " style="padding:0px;padding-left:1px;margin:0px;;;;;" title="XIONG CHANG WU">XIONG CHANG WU</label></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx819[R:0]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx819[R:0]')" style=";padding-right:5px; width:;" currentrow="true" class="tc cd   cursor_hand" headers="mx534"  ><table role="presentation" id="mx819[R:0]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx818[R:0]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx817[R:0]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx823[R:0]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx822[R:0]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx821[R:0]_holder" class="bc"><div ctype="label"  id="mx821[R:0]"    noclick="1"  targetid="mx821[R:0]"    class="text txtbold text label  label  " style="padding:0px;padding-left:1px;padding-top:5px;padding-bottom:5px;;;;;" title="NUSWW_TSTLNOTES">NUSWW_TSTLNOTES</div></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx827[R:0]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx827[R:0]')" style=";padding-right:5px; width:35;" currentrow="true" class="tc cd   cursor_hand" headers="mx545"  ><table role="presentation" id="mx827[R:0]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx826[R:0]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx825[R:0]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx834[R:0]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx833[R:0]_0"  align="right"   valign="middle" style="vertical-align:middle;"></td>
+				<td    nowrap="nowrap"  id="mx833[R:0]_1"  align="left"   valign="middle" style="vertical-align:middle;"><div aria-live="polite" id="mx831[R:0]_holder" class="bc">
+	<table role="presentation" id="mx831[R:0]_tb" border="0" cellspacing="0" cellpadding="0" style="margin:0px;vertical-align:middle;border:0px;display:inline-table;;" class="_b">
+		<tbody>
+			<tr>
+				<td valign="middle"><a role="checkbox"  aria-checked="false" href="javascript: void(0)" id="mx831[R:0]" ctype="checkbox" class="cb09"  title="Locked： unchecked" tabindex="-1" style="cursor:default" imgid="mx831[R:0]_img" aria-readonly="true" mxejse="cbHdlr" fldInfo='{&quot;length&quot;:&quot;&quot;,&quot;inttype&quot;:&quot;&quot;,&quot;eventpriority&quot;:2}'><img border="0" alt="Locked： unchecked" tabindex="-1" align="texttop" id="mx831[R:0]_img"  class="checkbox  " src="../webclient/skins-20140301-2351/tivoli09/images/table_cb_uncheckedreadonly.gif"  imgtype="gif" imgname="table_cb_" checked="unchecked" style="cursor:default" readonly="true" onfocus="this.parentNode.focus()"/></a></td>
+			</tr>
+		</tbody>
+	</table>
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx838[R:0]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx838[R:0]')" style="; width:;" currentrow="true" class="tc hl   cursor_hand" headers="mx556"  ><table role="presentation" id="mx838[R:0]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx837[R:0]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx836[R:0]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<td    nowrap="nowrap"  id="mx841[R:0]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx840[R:0]_holder" class="bc"><span ctype="label"  id="mx840[R:0]"   tabindex="0"     targetid="mx840[R:0]"  mxevent="click"  class="text label  label   anchor" style="display:block;;cursor:pointer;;;;" title="Add to Bookmarks"><img id='mx840[R:0]_image' src='../webclient/skins-20140301-2351/tivoli09/images/btn_addtobookmarks.gif'  border='0' alt="Add to Bookmarks" style='vertical-align:top;margin:0px;margin-left:3px;margin-right:3px;'/><span></span></span></div></td>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+	
+	</tr>
+
+	<tr aria-invalid="true" role="row" id="mx406[R:1]"    class="tablerow   treven" style="display:;">
+	<td headers="errtitle"><img id='mx406[R:1]_er_img' src='../webclient/skins-20140301-2351/tivoli09/images/blank.gif' style='display:none' class='tablerow_blank_icon' title="" alt=""/></td>	<td role="gridcell" control="true" id="mx728[R:1]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx728[R:1]')" style=";padding-right:5px; width:;" currentrow="false" class="tc hlsel   cursor_hand" headers="mx416"  ><table role="presentation" id="mx728[R:1]_inner" style="display:none;; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx727[R:1]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx726[R:1]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx732[R:1]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx731[R:1]_0"  align="left" class="tsrsa " valign="top" style="vertical-align:top;display:none;"><div aria-live="polite" id="mx730[R:1]_holder" class="bc"><a  href="javascript: void(0);" ctype="toggleimage" ev="false" tabindex="0"  compid="mx730[R:1]"  aria-role="checkbox" aria-checked="false" title="Select Record unchecked"><img id="mx730[R:1]"  fldInfo='{&quot;eventpriority&quot;:2}' aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti toggleselectcheckbox  " src="../webclient/skins-20140301-2351/tivoli09/images/table_cb_unchecked.gif" source="table_cb_unchecked" imgtype=".gif" ev="false" align="top" style="display:inline;margin:0px;margin-top:2px;" align="absbottom" alt="Select Record unchecked"  /></a>
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx736[R:1]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx736[R:1]')" style=";padding-right:5px; width:;" currentrow="false" class="tc hl   cursor_hand" headers="mx424"  ><table role="presentation" id="mx736[R:1]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx735[R:1]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx734[R:1]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx740[R:1]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx739[R:1]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx738[R:1]_holder" class="bc"><span ctype="label"  id="mx738[R:1]"   tabindex="0"     targetid="mx738[R:1]"  mxevent="click"  class="text label  label   anchor" style="padding:0px;padding-left:1px;margin:0px;;cursor:pointer;;;;" title="">IN4840896</span><img id='mx738[R:1]_tt' src='../webclient/skins-20140301-2351/tivoli09/images/btn10_moreInfo.png' role='button' aria-label='Incident More information' class='tooltipMarker' compid='mx738[R:1]' tabindex='-1'  hovertooltip='ticket_recordhover_1'  tttype='SYNC'  ctype='ttimage'/></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx744[R:1]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx744[R:1]')" style=";padding-right:5px; width:40;" currentrow="false" class="tc cd   cursor_hand" headers="mx435"  ><table role="presentation" id="mx744[R:1]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx743[R:1]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx742[R:1]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx751[R:1]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx750[R:1]_0"  align="right"   valign="middle" style="vertical-align:middle;"></td>
+				<td    nowrap="nowrap"  id="mx750[R:1]_1"  align="left"   valign="middle" style="vertical-align:middle;"><div aria-live="polite" id="mx748[R:1]_holder" class="bc">
+	<table role="presentation" id="mx748[R:1]_tb" border="0" cellspacing="0" cellpadding="0" style="margin:0px;vertical-align:middle;border:0px;display:inline-table;;" class="_b">
+		<tbody>
+			<tr>
+				<td valign="middle"><a role="checkbox"  aria-checked="false" href="javascript: void(0)" id="mx748[R:1]" ctype="checkbox" class="cb09"  title="Global Issue： unchecked" tabindex="-1" style="cursor:default" imgid="mx748[R:1]_img" aria-readonly="true" mxejse="cbHdlr" fldInfo='{&quot;length&quot;:&quot;&quot;,&quot;inttype&quot;:&quot;&quot;,&quot;eventpriority&quot;:2}'><img border="0" alt="Global Issue： unchecked" tabindex="-1" align="texttop" id="mx748[R:1]_img"  class="checkbox  " src="../webclient/skins-20140301-2351/tivoli09/images/table_cb_uncheckedreadonly.gif"  imgtype="gif" imgname="table_cb_" checked="unchecked" style="cursor:default" readonly="true" onfocus="this.parentNode.focus()"/></a></td>
+			</tr>
+		</tbody>
+	</table>
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx755[R:1]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx755[R:1]')" style=";padding-right:5px; width:250;" currentrow="false" class="tc cd   cursor_hand" headers="mx446"  ><table role="presentation" id="mx755[R:1]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx754[R:1]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx753[R:1]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx759[R:1]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx758[R:1]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx757[R:1]_holder" class="bc"><div ctype="label"  id="mx757[R:1]"    noclick="1"  targetid="mx757[R:1]"    class="text label  label  " style="padding:0px;padding-left:1px;padding-top:5px;padding-bottom:5px;;;;;" title="Issue with MyAttachments when data hasbeen migrated">Issue with MyAttachments when data<br/>hasbeen migrated</div></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx763[R:1]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx763[R:1]')" style=";padding-right:5px; width:;" currentrow="false" class="tc cd   cursor_hand" headers="mx457"  ><br/><table role="presentation" id="mx763[R:1]_inner" style="display:none;; margin-right:3px " align="right"  >
+			<tr>
+					<td    nowrap="nowrap"  id="mx762[R:1]_0"     valign="top" style="vertical-align:top;display:none;"><table role="presentation" control="true" id="mx761[R:1]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top"></table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx771[R:1]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx771[R:1]')" style=";padding-right:5px; width:;" currentrow="false" class="tc cd   cursor_hand" headers="mx468"  ><table role="presentation" id="mx771[R:1]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx770[R:1]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx769[R:1]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx775[R:1]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx774[R:1]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx773[R:1]_holder" class="bc"><label ctype="label"  id="mx773[R:1]"    noclick="1"  targetid="mx773[R:1]"    class="text label  label  " style="padding:0px;padding-left:1px;margin:0px;;;;;" title="SLAHOLD">SLAHOLD</label></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx779[R:1]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx779[R:1]')" style=";padding-right:5px; width:;" currentrow="false" class="tc cd   cursor_hand" headers="mx479"  ><table role="presentation" id="mx779[R:1]_inner" style="display:inline; margin-right:3px " align="right"  >
+			<tr>
+					<td    nowrap="nowrap"  id="mx778[R:1]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx777[R:1]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx783[R:1]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx782[R:1]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx781[R:1]_holder" class="bc"><label ctype="label"  id="mx781[R:1]"    noclick="1"  targetid="mx781[R:1]"    class="text label  label  " style="padding:0px;padding-left:1px;margin:0px;;;;;" title="3">3</label></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx787[R:1]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx787[R:1]')" style=";padding-right:5px; width:70;" currentrow="false" class="tc cd   cursor_hand" headers="mx490"  ><table role="presentation" id="mx787[R:1]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx786[R:1]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx785[R:1]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx791[R:1]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx790[R:1]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx789[R:1]_holder" class="bc">		&nbsp;
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx795[R:1]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx795[R:1]')" style=";padding-right:5px; width:70;" currentrow="false" class="tc cd   cursor_hand" headers="mx501"  ><table role="presentation" id="mx795[R:1]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx794[R:1]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx793[R:1]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx799[R:1]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx798[R:1]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx797[R:1]_holder" class="bc"><label ctype="label"  id="mx797[R:1]"    noclick="1"  targetid="mx797[R:1]"    class="text label  label  " style="padding:0px;padding-left:1px;margin:0px;;;;;" title="14-2-17 18:28:20">14-2-17 18:28:20</label></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx803[R:1]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx803[R:1]')" style=";padding-right:5px; width:140;" currentrow="false" class="tc cd   cursor_hand" headers="mx512"  ><table role="presentation" id="mx803[R:1]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx802[R:1]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx801[R:1]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx807[R:1]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx806[R:1]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx805[R:1]_holder" class="bc"><label ctype="label"  id="mx805[R:1]"    noclick="1"  targetid="mx805[R:1]"    class="text label  label  " style="padding:0px;padding-left:1px;margin:0px;;;;;" title="MARTIN R CHILDS">MARTIN R CHILDS</label></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx811[R:1]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx811[R:1]')" style=";padding-right:5px; width:140;" currentrow="false" class="tc cd   cursor_hand" headers="mx523"  ><table role="presentation" id="mx811[R:1]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx810[R:1]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx809[R:1]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx815[R:1]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx814[R:1]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx813[R:1]_holder" class="bc"><label ctype="label"  id="mx813[R:1]"    noclick="1"  targetid="mx813[R:1]"    class="text label  label  " style="padding:0px;padding-left:1px;margin:0px;;;;;" title="XIONG CHANG WU">XIONG CHANG WU</label></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx819[R:1]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx819[R:1]')" style=";padding-right:5px; width:;" currentrow="false" class="tc cd   cursor_hand" headers="mx534"  ><table role="presentation" id="mx819[R:1]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx818[R:1]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx817[R:1]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx823[R:1]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx822[R:1]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx821[R:1]_holder" class="bc"><div ctype="label"  id="mx821[R:1]"    noclick="1"  targetid="mx821[R:1]"    class="text label  label  " style="padding:0px;padding-left:1px;padding-top:5px;padding-bottom:5px;;;;;" title="NUSWW_TSTLNOTES">NUSWW_TSTLNOTES</div></div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx827[R:1]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx827[R:1]')" style=";padding-right:5px; width:35;" currentrow="false" class="tc cd   cursor_hand" headers="mx545"  ><table role="presentation" id="mx827[R:1]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx826[R:1]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx825[R:1]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<tr   control="true" id="mx834[R:1]_0"    style="vertical-align:top;">
+				<td    nowrap="nowrap"  id="mx833[R:1]_0"  align="right"   valign="middle" style="vertical-align:middle;"></td>
+				<td    nowrap="nowrap"  id="mx833[R:1]_1"  align="left"   valign="middle" style="vertical-align:middle;"><div aria-live="polite" id="mx831[R:1]_holder" class="bc">
+	<table role="presentation" id="mx831[R:1]_tb" border="0" cellspacing="0" cellpadding="0" style="margin:0px;vertical-align:middle;border:0px;display:inline-table;;" class="_b">
+		<tbody>
+			<tr>
+				<td valign="middle"><a role="checkbox"  aria-checked="false" href="javascript: void(0)" id="mx831[R:1]" ctype="checkbox" class="cb09"  title="Locked： unchecked" tabindex="-1" style="cursor:default" imgid="mx831[R:1]_img" aria-readonly="true" mxejse="cbHdlr" fldInfo='{&quot;length&quot;:&quot;&quot;,&quot;inttype&quot;:&quot;&quot;,&quot;eventpriority&quot;:2}'><img border="0" alt="Locked： unchecked" tabindex="-1" align="texttop" id="mx831[R:1]_img"  class="checkbox  " src="../webclient/skins-20140301-2351/tivoli09/images/table_cb_uncheckedreadonly.gif"  imgtype="gif" imgname="table_cb_" checked="unchecked" style="cursor:default" readonly="true" onfocus="this.parentNode.focus()"/></a></td>
+			</tr>
+		</tbody>
+	</table>
+</div></td>
+				</tr>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+		<td role="gridcell" control="true" id="mx838[R:1]"    onmouseover="appendClass(this.parentNode,'trh')" onmouseout="removeClass(this.parentNode,'trh')" onclick="tcClick(event,'mx838[R:1]')" style="; width:;" currentrow="false" class="tc hl   cursor_hand" headers="mx556"  ><table role="presentation" id="mx838[R:1]_inner" style="display:inline; " >
+			<tr>
+					<td    nowrap="nowrap"  id="mx837[R:1]_0"     valign="top" style="vertical-align:top;"><table role="presentation" control="true" id="mx836[R:1]"   width="100%"  class="  " summary=""  style="width:100%;;;vertical-align:top">				<td    nowrap="nowrap"  id="mx841[R:1]_0"  align="left"   valign="top" style="vertical-align:top;"><div aria-live="polite" id="mx840[R:1]_holder" class="bc"><span ctype="label"  id="mx840[R:1]"   tabindex="0"     targetid="mx840[R:1]"  mxevent="click"  class="text label  label   anchor" style="display:block;;cursor:pointer;;;;" title="Add to Bookmarks"><img id='mx840[R:1]_image' src='../webclient/skins-20140301-2351/tivoli09/images/btn_addtobookmarks.gif'  border='0' alt="Add to Bookmarks" style='vertical-align:top;margin:0px;margin-left:3px;margin-right:3px;'/><span></span></span></div></td>
+</table>
+</td>
+		
+				</tr>
+			</table></td>
+	
+	</tr>
+
+	<tr aria-invalid="true" role="row" id="mx412"    class="tablerow   troddtsr" style="display:;">
+					<td role='gridcell'    colspan='100' nowrap="nowrap"  id="mx411_0"  align="left" class="tsrs " valign="middle" style="vertical-align:middle;"><div aria-live="polite" id="mx410_holder" class="bc"><a  href="javascript: void(0);" ctype="toggleimage" ev="false" tabindex="0"  compid="mx410"   title="Select Specific Records"><img id="mx410"  aria-disabled="true" aria-hidden="true"  tabindex="-1" border="0" class="ti toggleselectcheckbox  " src="../webclient/skins-20140301-2351/tivoli09/images/table_cb_unchecked.gif" source="table_cb_unchecked" imgtype=".gif" ev="false" align="top" style="display:inline;margin:0px;"  alt="Select Specific Records"  /></a>
+		&nbsp;<span id="mx410_label"  class="text">Select Records</span>
+</div></td>
+
+	</tr>
+
+						</table>
+					</div>
+				]]></component>
+
+<deferredscript><![CDATA[focusItem('mx400',true);scrollScreen('0','0');resetLogoutTimer(true);if(tpaeConfig.validationOn) {setButtonEnabled(saveButton,false)};]]></deferredscript></server_response>
